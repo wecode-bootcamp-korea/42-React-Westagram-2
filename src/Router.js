@@ -6,16 +6,16 @@ import LoginHansol from './pages/hansolKim/Login/Login';
 import MainHansol from './pages/hansolKim/Main/Main';
 
 // 박준현의 컴포넌트
-import LoginJunhyun from './pages/JunhyunPark/Login/Login';
-import MainJunhyun from './pages/JunhyunPark/Main/Main';
+import LoginJunhyun from './pages/junhyunPark/Login/Login';
+import MainJunhyun from './pages/junhyunPark/Main/Main';
 
 // 성은정의 컴포넌트
-import LoginEunjung from './pages/EunjungSung/Login/Login';
-import MainEunjung from './pages/EunjungSung/Main/Main';
+import LoginEunjung from './pages/eunjungSung/Login/Login';
+import MainEunjung from './pages/eunjungSung/Main/Main';
 
 // 신혜린님의 컴포넌트
-import LoginHeylynn from './pages/HeylynnShin/Login/Login';
-import MainHeylynn from './pages/HeylynnShin/Main/Main';
+import LoginHeylynn from './pages/heylynnShin/Login/Login';
+import MainHeylynn from './pages/heylynnShin/Main/Main';
 
 const Router = () => {
   return (
