@@ -6,23 +6,21 @@ import Content3 from './Content3/Content3';
 
 const Main = () => {
   return (
-    <React.Fragment>
-      <section>
-        <div className="layout">
-          <div className="content1">
-            <Content1 />
+    <section>
+      <div className="layout">
+        <div className="content1">
+          <Content1 />
+        </div>
+        <div className="main">
+          <div className="content2">
+            <Content2 />
           </div>
-          <div className="main">
-            <div className="content2">
-              <Content2 />
-            </div>
-            <div className="content3">
-              <Content3 />
-            </div>
+          <div className="content3">
+            <Content3 />
           </div>
         </div>
-      </section>
-    </React.Fragment>
+      </div>
+    </section>
   );
 };
 
