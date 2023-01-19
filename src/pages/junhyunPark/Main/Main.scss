@@ -31,7 +31,7 @@
       }
       .letterLogo {
         display: inline-block;
-        font-family: "lobster", cursive;
+        font-family: 'lobster', cursive;
       }
 
       .inputName {
@@ -98,7 +98,7 @@
           background-color: white;
           border: 1px solid #dbdbdb;
           /* padding: 20px; */
-          height: 780px;
+          height: 765px;
           margin-top: 10px;
           font-size: 15px;
 
@@ -149,9 +149,10 @@
             }
           }
           .likePic {
-            /* display: flex; */
+            display: flex;
+            align-items: center;
             margin: 0px 10px 0px 10px;
-            position: relative;
+
             .ondal {
               width: 25px;
               height: 25px;
@@ -159,22 +160,26 @@
             }
             .likeInfo {
               margin-left: 10px;
-              position: absolute;
-              margin-top: -15px;
+              font-weight: bold;
+              // position: absolute;
+              // margin-top: -15px;
             }
           }
           .ondalID {
             display: inline-block;
-            margin: 0px 10px 0px 10px;
+            margin: 10px 10px 0px 10px;
+            font-weight: bold;
           }
           .yumyumID {
             display: inline-block;
-            margin: 0px 10px 0px 10px;
+            margin: 10px 10px 0px 10px;
+            font-weight: bold;
           }
           .heartMini {
             width: 20px;
             float: right;
             margin-right: 10px;
+            margin-top: 10px;
           }
           .chatMin {
             margin-left: 10px;
@@ -185,7 +190,7 @@
             display: flex;
             /* margin-top: 100px; */
             margin-top: 110px;
-            position:relative;
+            position: relative;
             .commentBox {
               width: 522px;
               height: 66px;
@@ -193,10 +198,10 @@
               border-right: 0px;
             }
             button {
-              background-color:white;
-              width:50px;
+              background-color: white;
+              width: 50px;
               border: 1.5px solid #dbdbdb;
-              border-left : 0px;
+              border-left: 0px;
               color: #3a6ea5;
             }
           }
@@ -204,21 +209,15 @@
       }
     }
 
-  
-
     .main-right {
       margin-left: 10px;
       padding: 10px;
 
       .side-bar {
-        /* background-color: white; */
-        /* float: right; */
         width: 300px;
         height: 600px;
         display: inline-block;
-        /* margin-left: 30px; */
-        /* margin-right: 100px; */
-        /* margin-top: 0px; */
+
         .bootCamp {
           position: relative;
           margin-left: 10px;
@@ -234,8 +233,7 @@
             position: absolute;
             display: inline-block;
             margin: 7px 0px 0px 10px;
-
-            /* font-weight: bold; */
+            font-weight: bold;
           }
 
           .weCode2 {
@@ -263,11 +261,9 @@
           }
           .storyPic {
             position: absolute;
-            /* display: flex; */
             margin-top: 20px;
             width: 250px;
             height: 165px;
-            /* border: 1px solid red; */
             padding-left: 10px;
             ._we_ {
               width: 30px;
@@ -280,6 +276,7 @@
               position: absolute;
               display: inline-block;
               margin: 7px 0px 0px 10px;
+              font-weight: bold;
             }
             ._we_3 {
               position: absolute;
@@ -299,6 +296,7 @@
               position: absolute;
               display: inline-block;
               margin: 7px 0px 0px 10px;
+              font-weight: bold;
             }
             .code_3 {
               position: absolute;
@@ -318,6 +316,7 @@
               position: absolute;
               display: inline-block;
               margin: 7px 0px 0px 10px;
+              font-weight: bold;
             }
             .fortyThree {
               position: absolute;
@@ -337,6 +336,7 @@
               position: absolute;
               display: inline-block;
               margin: 7px 0px 0px 10px;
+              font-weight: bold;
             }
             .frontEndThree {
               position: absolute;
@@ -377,6 +377,7 @@
               position: absolute;
               display: inline-block;
               margin: 7px 0px 0px 10px;
+              font-weight: bold;
             }
             .recom3 {
               position: absolute;
@@ -389,7 +390,7 @@
         }
         .pageInfo {
           font-size: 13px;
-          margin-left: 10px;
+          margin: 20px 10px;
           color: grey;
         }
       }

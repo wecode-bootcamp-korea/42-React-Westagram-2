@@ -6,7 +6,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const goToMain = () => {
-    navigate('/main');
+    navigate('/main-junhyun');
   };
 
   return (
@@ -30,7 +30,7 @@ const Login = () => {
             </button>
           </div>
           <div className="pwForgot">
-            <a href="" className="forgotPw">
+            <a href=" " className="forgotPw">
               <span>비밀번호를 잊으셨나요?</span>
             </a>
           </div>
