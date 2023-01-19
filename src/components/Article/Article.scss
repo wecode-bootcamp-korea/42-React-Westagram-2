@@ -1,0 +1,81 @@
+@import '../../styles/mixin.scss';
+@import '../../styles/common.scss';
+
+.article {
+  width: 454px;
+  margin-right: 100px;
+  border: 1px solid lightgray;
+  background: white;
+
+  .profileWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .profileLeft {
+    @include flex(center, center);
+    gap: 10px;
+  }
+
+  .menuImg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .articleImg {
+    width: 454px;
+    height: 454px;
+  }
+
+  .functionWrapper {
+    @include flex(space-between, center);
+    padding: 10px;
+  }
+
+  .functionRight {
+    display: flex;
+    gap: 10px;
+  }
+
+  .likeWrapper {
+    @include flex(left, center);
+    text-align: center;
+  }
+
+  .likeImg {
+    margin: 0px 10px;
+  }
+
+  .descWrapper {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .commentInput {
+    width: 379px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+  }
+
+  .commentInput:focus {
+    outline: none;
+  }
+
+  .commentForm {
+    border-top: 1px solid lightgray;
+    margin-top: 10px;
+  }
+
+  .commentBtn {
+    margin-right: 10px;
+    border: none;
+    background-color: white;
+    color: #458eff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

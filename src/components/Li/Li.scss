@@ -1,0 +1,47 @@
+@import '../../styles/mixin.scss';
+@import '../../styles/common.scss';
+
+.storyLi {
+  @include flex(left, center);
+  margin-bottom: 15px;
+  gap: 10px;
+
+  .profileImg {
+    @include imgSize;
+  }
+}
+
+.profileDiv {
+  @include flex(left, null);
+  flex-direction: column;
+  gap: 2px;
+
+  .colorGray {
+    width: 140px;
+    height: 18px;
+    margin-top: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.recommendLi {
+  @include flex(space-between, center);
+  margin-bottom: 15px;
+  gap: 10px;
+
+  .liDiv {
+    @include flex(left, null);
+    gap: 10px;
+
+    .profileImg {
+      @include imgSize;
+    }
+  }
+
+  .blueB {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}
