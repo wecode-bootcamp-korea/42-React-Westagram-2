@@ -1,0 +1,398 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+
+  .nav {
+    margin: 0;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 100;
+
+    /* box-sizing: border-box; */
+    .nav-item {
+      display: flex;
+      justify-content: space-evenly;
+      .logo {
+        width: 30px;
+        margin-right: 5px;
+        margin-bottom: -5px;
+      }
+
+      .dash {
+        width: 30px;
+        margin-bottom: -5px;
+      }
+      .letterLogo {
+        display: inline-block;
+        font-family: "lobster", cursive;
+      }
+
+      .inputName {
+        margin: 20px 50px 0px 50px;
+        // text-align: center;
+        // background-color: #fafafa;
+        // border-radius: 3px;
+        // width: 180px;
+        // height: 20px;
+        // border: 1px solid #dbdbdb;
+        position: relative;
+
+        input {
+          text-align: center;
+          background-color: #fafafa;
+          border-radius: 3px;
+          width: 180px;
+          height: 20px;
+          border: 1px solid #dbdbdb;
+        }
+
+        .inputPic {
+          position: absolute;
+          width: 15px;
+          top: 4px;
+          left: 55px;
+          margin: 0;
+        }
+      }
+      .topRight {
+        margin-top: 15px;
+        .heart {
+          margin: 0px 16px 0px 16px;
+          width: 30px;
+        }
+
+        .Compass {
+          width: 30px;
+        }
+
+        .myPage {
+          width: 30px;
+        }
+      }
+    }
+  }
+  main {
+    display: flex;
+    position: relative;
+    /* border: 2px solid green; */
+    margin-top: 53px;
+    justify-content: center;
+    .main-left {
+      padding: 15px;
+      .feeds {
+        /* border: 2px solid red; */
+        width: 530px;
+        height: 800px;
+        display: inline-block;
+        padding: 28px 0px 10px 0px;
+        /* margin-left: 100px; */
+        /* box-sizing: border-box; */
+        .article {
+          background-color: white;
+          border: 1px solid #dbdbdb;
+          /* padding: 20px; */
+          height: 780px;
+          margin-top: 10px;
+          font-size: 15px;
+
+          .profile {
+            position: relative;
+            margin-left: 10px;
+            margin-top: 10px;
+
+            .proFilePic {
+              width: 40px;
+              border: 1px solid white;
+              border-radius: 20px;
+              display: inline-block;
+            }
+
+            .profileName {
+              position: absolute;
+              margin-top: 13px;
+              margin-left: 10px;
+              font-weight: bold;
+            }
+          }
+          .dogPic {
+            width: 529px;
+            height: 400px;
+          }
+          .emoji {
+            display: flex;
+            justify-content: space-between;
+            .emoji-left {
+              margin-top: 10px;
+              .likes {
+                width: 30px;
+                margin-left: 20px;
+              }
+              .chat {
+                width: 30px;
+                margin: 0px 15px 0px 15px;
+              }
+              .send {
+                width: 30px;
+              }
+            }
+            .mark {
+              width: 30px;
+              margin-right: 10px;
+              margin-top: 10px;
+            }
+          }
+          .likePic {
+            /* display: flex; */
+            margin: 0px 10px 0px 10px;
+            position: relative;
+            .ondal {
+              width: 25px;
+              height: 25px;
+              border-radius: 20px;
+            }
+            .likeInfo {
+              margin-left: 10px;
+              position: absolute;
+              margin-top: -15px;
+            }
+          }
+          .ondalID {
+            display: inline-block;
+            margin: 0px 10px 0px 10px;
+          }
+          .yumyumID {
+            display: inline-block;
+            margin: 0px 10px 0px 10px;
+          }
+          .heartMini {
+            width: 20px;
+            float: right;
+            margin-right: 10px;
+          }
+          .chatMin {
+            margin-left: 10px;
+            font-weight: 300;
+            margin-top: auto;
+          }
+          .BoxComment {
+            display: flex;
+            /* margin-top: 100px; */
+            margin-top: 110px;
+            position:relative;
+            .commentBox {
+              width: 522px;
+              height: 66px;
+              border: 1.5px solid #dbdbdb;
+              border-right: 0px;
+            }
+            button {
+              background-color:white;
+              width:50px;
+              border: 1.5px solid #dbdbdb;
+              border-left : 0px;
+              color: #3a6ea5;
+            }
+          }
+        }
+      }
+    }
+
+  
+
+    .main-right {
+      margin-left: 10px;
+      padding: 10px;
+
+      .side-bar {
+        /* background-color: white; */
+        /* float: right; */
+        width: 300px;
+        height: 600px;
+        display: inline-block;
+        /* margin-left: 30px; */
+        /* margin-right: 100px; */
+        /* margin-top: 0px; */
+        .bootCamp {
+          position: relative;
+          margin-left: 10px;
+          margin-top: 10px;
+          .bcPic {
+            width: 40px;
+            border: 1px solid white;
+            border-radius: 20px;
+            display: inline-block;
+          }
+
+          .weCode {
+            position: absolute;
+            display: inline-block;
+            margin: 7px 0px 0px 10px;
+
+            /* font-weight: bold; */
+          }
+
+          .weCode2 {
+            position: absolute;
+            display: inline-block;
+            margin: 22px 0px 0px 10px;
+            font-weight: 400;
+            color: grey;
+          }
+        }
+        .storySection {
+          border: 1px solid #dbdbdb;
+          margin-top: 10px;
+          padding: 10px;
+          height: 165px;
+          background-color: white;
+          display: flex;
+          justify-content: space-between;
+          font-size: 15px;
+          position: relative;
+          overflow-y: scroll;
+
+          .story {
+            color: grey;
+          }
+          .storyPic {
+            position: absolute;
+            /* display: flex; */
+            margin-top: 20px;
+            width: 250px;
+            height: 165px;
+            /* border: 1px solid red; */
+            padding-left: 10px;
+            ._we_ {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+
+            ._we_2 {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+            }
+            ._we_3 {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+            .code_ {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+
+            .code_2 {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+            }
+            .code_3 {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+            .forty {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+
+            .fortyTwo {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+            }
+            .fortyThree {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+            .frontEnd {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+
+            .frontEndTwo {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+            }
+            .frontEndThree {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+          }
+        }
+        .recommend {
+          border: 1px solid #dbdbdb;
+          margin-top: 10px;
+          padding: 10px;
+          height: 180px;
+          background-color: white;
+          display: flex;
+          justify-content: space-between;
+          font-size: 15px;
+          position: relative;
+          .recommendFor {
+            color: grey;
+          }
+          .recommendPic {
+            position: absolute;
+            margin-top: 20px;
+            width: 250px;
+            height: 165px;
+            padding-left: 10px;
+
+            .recom1 {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+            .recom2 {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+            }
+            .recom3 {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+          }
+        }
+        .pageInfo {
+          font-size: 13px;
+          margin-left: 10px;
+          color: grey;
+        }
+      }
+    }
+  }
+}
