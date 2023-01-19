@@ -9,24 +9,48 @@ function Mainleft() {
             <div className="profile">
               <img
                 className="proFilePic"
-                src="images/me1.jpg"
+                src="images/junhyunPark/me1.jpg"
                 alt="profilepic"
               />
               <span className="profileName">42_Junhyun</span>
             </div>
-            <img className="dogPic" src="images/IMG_2510.JPG" alt="ondal" />
+            <img
+              className="dogPic"
+              src="images/junhyunPark/IMG_2510.JPG"
+              alt="ondal"
+            />
             <div className="emoji">
               <div className="emoji-left">
-                <img className="likes" src="images/heart.png" alt="likes" />
-                <img className="chat" src="images/chat.png" alt="chat" />
-                <img className="send" src="images/send.png" alt="send" />
+                <img
+                  className="likes"
+                  src="images/junhyunPark/heart.png"
+                  alt="likes"
+                />
+                <img
+                  className="chat"
+                  src="images/junhyunPark/chat.png"
+                  alt="chat"
+                />
+                <img
+                  className="send"
+                  src="images/junhyunPark/send.png"
+                  alt="send"
+                />
               </div>
               <div className="emoji-right">
-                <img className="mark" src="images/mark.png" alt="mark" />
+                <img
+                  className="mark"
+                  src="images/junhyunPark/mark.png"
+                  alt="mark"
+                />
               </div>
             </div>
             <div className="likePic">
-              <img className="ondal" src="images/IMG_2510.JPG" alt="ondal" />
+              <img
+                className="ondal"
+                src="images/junhyunPark/IMG_2510.JPG"
+                alt="ondal"
+              />
               <span className="likeInfo">
                 <h4>ondal님 외 42명이 좋아 합니다 </h4>
               </span>

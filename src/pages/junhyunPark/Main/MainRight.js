@@ -8,7 +8,7 @@ function MainRight() {
           <div className="bootCamp">
             <img
               className="bcPic"
-              src="images/me1.jpg"
+              src="images/junhyunPark/me1.jpg"
               width="40px"
               alt="bcPIc"
             />
@@ -21,22 +21,38 @@ function MainRight() {
             <div className="seeAll">모두 보기</div>
             <div className="storyPic">
               <div>
-                <img className="_we_" src="images/_we_.png" alt="we1" />
+                <img
+                  className="_we_"
+                  src="images/junhyunPark/_we_.png"
+                  alt="we1"
+                />
                 <h4 className="_we_2">_we_</h4>
                 <h4 className="_we_3">42초 전</h4>
               </div>
               <div>
-                <img className="code_" src="images/code._..png" alt="pinkPIc" />
+                <img
+                  className="code_"
+                  src="images/junhyunPark/code._..png"
+                  alt="pinkPIc"
+                />
                 <h4 className="code_2">code._.</h4>
                 <h4 className="code_3">42분 전 </h4>
               </div>
               <div>
-                <img className="forty" src="images/42.png" alt="42" />
+                <img
+                  className="forty"
+                  src="images/junhyunPark/42.png"
+                  alt="42"
+                />
                 <h4 className="fortyTwo">42__</h4>
                 <h4 className="fortyThree">42분 전 </h4>
               </div>
               <div>
-                <img className="frontEnd" src="images/frontEnd.png" alt="fE" />
+                <img
+                  className="frontEnd"
+                  src="images/junhyunPark/frontEnd.png"
+                  alt="fE"
+                />
                 <h4 className="frontEndTwo" alt="">
                   __qkrwnsgus
                 </h4>
@@ -50,17 +66,29 @@ function MainRight() {
             <div>모두 보기</div>
             <div className="recommendPic">
               <div>
-                <img className="recom1" src="images/wecode.png" alt="" />
+                <img
+                  className="recom1"
+                  src="images/junhyunPark/wecode.png"
+                  alt=""
+                />
                 <h4 className="recom2">wecode_bootcamp</h4>
                 <h4 className="recom3">_we_ 님 외 12명이... </h4>
               </div>
               <div>
-                <img className="recom1" src="images/wecode.png" alt="" />
+                <img
+                  className="recom1"
+                  src="images/junhyunPark/wecode.png"
+                  alt=""
+                />
                 <h4 className="recom2">wecode_bootcamp</h4>
                 <h4 className="recom3">_we_ 님 외 12명이... </h4>
               </div>
               <div>
-                <img className="recom1" src="images/wecode.png" alt="" />
+                <img
+                  className="recom1"
+                  src="images/junhyunPark/wecode.png"
+                  alt=""
+                />
                 <h4 className="recom2">wecode_bootcamp</h4>
                 <h4 className="recom3">_we_ 님 외 12명이... </h4>
               </div>
