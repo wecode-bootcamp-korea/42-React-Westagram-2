@@ -1,0 +1,122 @@
+@import '../../../styles/variables.scss';
+
+$backgroundColor: #ffffff;
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.layout {
+  width: 100%;
+  height: 100vh;
+  background-color: blue;
+  overflow-y: visible;
+  margin: 0;
+  .content1 {
+    background-color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    @include flex(space-evenly, center);
+    .navbar-left {
+      font-family: 'Lobster';
+      font-size: 25px;
+    }
+    .navbar-center {
+      .search {
+        width: 230px;
+        text-align: center;
+      }
+    }
+    .navbar-right {
+      img {
+        margin: 10px;
+      }
+    }
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    min-height: 75vh;
+    background-color: blue;
+    .content2 {
+      width: 500px;
+      background-color: blue;
+      padding-left: 30px;
+      .article {
+        width: 450px;
+        min-height: 300px;
+        background-color: yellow;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        .userLine {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          .userLine-left {
+            padding-left: 5px;
+            span {
+              padding-left: 5px;
+            }
+          }
+        }
+        .imageLine {
+          img {
+            width: 450px;
+            height: 450px;
+          }
+        }
+        .imojiLine {
+          padding: 5px;
+          display: flex;
+          justify-content: space-between;
+          .imoji-left {
+            padding: 5px;
+            img {
+              margin-right: 5px;
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+        .likeLine {
+          padding-left: 5px;
+          span {
+            padding-left: 3px;
+          }
+        }
+      }
+    }
+    .content3 {
+      width: 250px;
+      background-color: blue;
+      display: flex;
+      flex-direction: column;
+      .username {
+        margin-top: 100px;
+        width: 250px;
+        min-height: 80px;
+        background-color: red;
+      }
+      .story {
+        width: 250px;
+        height: 150px;
+        background-color: lightgreen;
+      }
+      .recommend {
+        margin-top: 20px;
+        width: 250px;
+        height: 120px;
+        background-color: pink;
+      }
+    }
+  }
+}
