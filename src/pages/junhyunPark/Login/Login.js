@@ -1,23 +1,7 @@
-// import { useState } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.scss";
 
-// function LoginPage() {
-//   값   //값 정하는 func   //기본 값
-//   const [Id, setInput] = useState("");
-//   //const [inputPw, setInput] = useState("");
-//   const [bgColor, setBgcolor] = useState("");
-
-//   const updateInput = (e) => {
-//     const inputVal = e.target.value;
-//     setInput(inputVal);
-//     if (inputVal.length > 4) {
-//       setBgcolor("blue");
-//     } else {
-//       setBgcolor("#red");
-//     }
-//   };
 
 const Login = () => {
   const navigate = useNavigate();
@@ -36,7 +20,7 @@ const Login = () => {
               id="id"
               type="text"
               placeholder="전화번호,사용자 이름 또는 이메일 "
-              //onChange={updateInput}
+
             />
           </div>
           <div className="inputBox">
@@ -44,15 +28,13 @@ const Login = () => {
               id="password"
               type="password"
               placeholder="비밀번호"
-              // onChange={updateInput}
+              
             />
           </div>
           <div className="buttonBox">
             <button
               type="button"
-              className="btn"
-              // disabled="disabled"
-              // onChange={updateInput}
+              className="btn"            
               onClick={goToMain}
             >
               <span>로그인</span>
