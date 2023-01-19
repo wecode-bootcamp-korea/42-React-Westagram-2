@@ -1,13 +1,12 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./Login.scss";
-
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Login.scss';
 
 const Login = () => {
   const navigate = useNavigate();
 
   const goToMain = () => {
-    navigate("/main");
+    navigate('/main');
   };
 
   return (
@@ -20,23 +19,13 @@ const Login = () => {
               id="id"
               type="text"
               placeholder="전화번호,사용자 이름 또는 이메일 "
-
             />
           </div>
           <div className="inputBox">
-            <input
-              id="password"
-              type="password"
-              placeholder="비밀번호"
-              
-            />
+            <input id="password" type="password" placeholder="비밀번호" />
           </div>
           <div className="buttonBox">
-            <button
-              type="button"
-              className="btn"            
-              onClick={goToMain}
-            >
+            <button type="button" className="btn" onClick={goToMain}>
               <span>로그인</span>
             </button>
           </div>

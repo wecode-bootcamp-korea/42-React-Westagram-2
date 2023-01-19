@@ -1,13 +1,13 @@
-import "./Main.scss";
-import Nav from "./Nav";
-import MainLeft from "./MainLeft";
-import MainRight from "./MainRight";
+import './Main.scss';
+
+import MainLeft from './MainLeft';
+import MainRight from './MainRight';
 
 const MainPage = () => {
   return (
     <div className="mainPage">
       <div className="inner">
-        <Nav />
+        {/* <Nav /> */}
         <main>
           <MainLeft />
           <MainRight />
