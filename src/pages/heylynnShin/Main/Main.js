@@ -9,14 +9,14 @@ import {
   faBookmark,
 } from '@fortawesome/free-solid-svg-icons';
 
-const Main = () => {
+const MainHeylynn = () => {
   return (
-    <div className="main">
+    <div className="mainHeylynn">
       <nav>
         <div className="logo">
           <img
             className="logoImage"
-            src="images/instagram.png"
+            src="images/heylynnShin/instagram.png"
             alt="Instagram Logo"
           />
           <h1 className="logoText">Westagram</h1>
@@ -52,7 +52,7 @@ const Main = () => {
                   <div className="imageConatiner">
                     <img
                       className="image"
-                      src="images/profile_me.jpg"
+                      src="images/heylynnShin/profile_me.jpg"
                       alt="profile pic"
                     />
                   </div>
@@ -62,7 +62,7 @@ const Main = () => {
             </section>
             <section className="feedImageContainer">
               <img
-                src="images/westagram-feed.png"
+                src="images/heylynnShin/westagram-feed.png"
                 alt="feed pic"
                 className="feedImage"
               />
@@ -133,4 +133,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainHeylynn;
