@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import './Login.scss';
 
 const Login = () => {
@@ -7,6 +8,18 @@ const Login = () => {
 
   const goToMain = () => {
     navigate('/main-junhyun');
+  };
+
+  const [input, setInput] = useState('');
+  const [password, setPassword] = useState('');
+  const saveUserId = e => {
+    const inputVal = e.target.value;
+    setInput(inputVal);
+  };
+
+  const saveUserPw = e => {
+    const passwordVal = e.target.value;
+    setPassword(passwordVal);
   };
 
   return (
@@ -19,10 +32,18 @@ const Login = () => {
               id="id"
               type="text"
               placeholder="전화번호,사용자 이름 또는 이메일 "
+              onChange={saveUserId}
+              value={input}
             />
           </div>
           <div className="inputBox">
-            <input id="password" type="password" placeholder="비밀번호" />
+            <input
+              id="pW"
+              type="password"
+              placeholder="비밀번호"
+              onChange={saveUserPw}
+              value={password}
+            />
           </div>
           <div className="buttonBox">
             <button type="button" className="btn" onClick={goToMain}>
