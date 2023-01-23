@@ -12,6 +12,7 @@ const Login = () => {
 
   const [input, setInput] = useState('');
   const [password, setPassword] = useState('');
+
   const saveUserId = e => {
     const inputVal = e.target.value;
     setInput(inputVal);
@@ -21,6 +22,9 @@ const Login = () => {
     const passwordVal = e.target.value;
     setPassword(passwordVal);
   };
+  // 비밀 번호가 5와 같거나 크면 로그인 버튼이 활성화 아니면 비활성화
+
+  const isDisabled = input.includes('@') && password.length >= 5 ? false : true;
 
   return (
     <div className="Login">
@@ -46,7 +50,13 @@ const Login = () => {
             />
           </div>
           <div className="buttonBox">
-            <button type="button" className="btn" onClick={goToMain}>
+            <button
+              type="button"
+              // className={isDisabled ? 'btnLogin' : 'btnLoginabled'}
+              className="btnLogin"
+              onClick={goToMain}
+              disabled={isDisabled}
+            >
               <span>로그인</span>
             </button>
           </div>

@@ -33,16 +33,35 @@
         background-color: #fafafa;
         box-sizing: border-box;
       }
-      button {
+      .btnLogin {
         width: 100%;
-        background-color: #bfdffd;
+        background-color: #0395f6;
         color: white;
         border: 1px solid white;
         border-radius: 5px;
         padding: 3px;
         margin-top: 8px;
         padding: 5px;
+        cursor: pointer;
+
+        &:disabled {
+          background-color: #bfdffd;
+          cursor: default;
+        }
       }
+
+      // .btnLoginabled {
+      //   width: 100%;
+      //   background-color: #0395f6;
+      //   color: white;
+      //   border: 1px solid white;
+      //   border-radius: 5px;
+      //   padding: 3px;
+      //   margin-top: 8px;
+      //   padding: 5px;
+      //   cursor: pointer;
+      // }
+
       .forgotPw {
         position: absolute;
         bottom: 30px;
@@ -54,4 +73,3 @@
     }
   }
 }
-// }
