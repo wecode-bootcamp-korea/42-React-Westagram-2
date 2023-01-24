@@ -3,22 +3,30 @@ import './Login.scss';
 import { Link, useNavigate } from 'react-router-dom';
 
 function LoginEunjung() {
-  // userId 저장
+  // 로그인 유효성 검사
   const [userId, setUserId] = useState('');
+  const [userPw, setUserPw] = useState('');
+  const [btnDisabled, setbtnDisabled] = useState(true);
 
   const saveUserId = event => {
     setUserId(event.target.value);
   };
 
-  // userPw 저장
-  const [userPw, setUserPw] = useState('');
-
   const saveUserPw = event => {
     setUserPw(event.target.value);
   };
 
+  const isValid = () => {
+    userId.indexOf('@') >= 0 && userPw.length > 5
+      ? setbtnDisabled(false)
+      : setbtnDisabled(true);
+  };
+
   // 페이지 이동
   const navigate = useNavigate();
+  const goToMain = () => {
+    navigate('/main-eunjung');
+  };
 
   return (
     <div className="login">
@@ -33,6 +41,7 @@ function LoginEunjung() {
             type="text"
             placeholder="전화번호, 사용자 이름 또는 이메일"
             onChange={saveUserId}
+            onKeyUp={isValid}
           />
           <input
             value={userPw || ''}
@@ -40,13 +49,13 @@ function LoginEunjung() {
             type="password"
             placeholder="비밀번호"
             onChange={saveUserPw}
+            onKeyUp={isValid}
           />
           <button
             className="loginBtn"
             type="button"
-            onClick={() => {
-              navigate('/main-eunjung');
-            }}
+            onClick={goToMain}
+            disabled={btnDisabled}
           >
             로그인
           </button>

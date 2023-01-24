@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.scss';
-import { StoryLi, RecommendLi } from '../../../components/Li/Li';
+import { StoryLi, RecommendLi } from '../../../components/Li/ProfileLi';
 import { Article } from '../../../components/Article/Article';
 import { Nav } from '../../../components/Nav/Nav';
 
@@ -29,9 +29,18 @@ function MainEunjung() {
               <span className="fontBold">모두 보기</span>
             </div>
             <ul className="storyUl">
-              <StoryLi />
-              <StoryLi />
-              <StoryLi />
+              <StoryLi
+                profileName="samsaek"
+                path="images/eunjungSung/recommend-img1.png"
+              />
+              <StoryLi
+                profileName="jjonkdduck"
+                path="images/eunjungSung/recommend-img2.png"
+              />
+              <StoryLi
+                profileName="donggul"
+                path="images/eunjungSung/recommend-img3.png"
+              />
             </ul>
           </div>
 
@@ -41,9 +50,18 @@ function MainEunjung() {
               <span className="fontBold">모두 보기</span>
             </div>
             <ul className="recommendUl">
-              <RecommendLi />
-              <RecommendLi />
-              <RecommendLi />
+              <RecommendLi
+                profileName="anonymous1"
+                path="images/eunjungSung/recommend-img1.png"
+              />
+              <RecommendLi
+                profileName="anonymous2"
+                path="images/eunjungSung/recommend-img2.png"
+              />
+              <RecommendLi
+                profileName="anonymous3"
+                path="images/eunjungSung/recommend-img3.png"
+              />
             </ul>
           </div>
         </div>
