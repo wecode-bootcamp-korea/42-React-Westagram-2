@@ -1,6 +1,24 @@
 import React from 'react';
-
+import { useState } from 'react';
 function Mainleft() {
+  const [comments, setComments] = useState('');
+
+  const postComments = e => {
+    const commentsValue = e.target.value;
+    setComments(commentsValue);
+  };
+
+  const [feedComments, setFeedComments] = useState([]);
+
+  const onSubmit = e => {
+    e.preventDefault();
+    if (comments === '') {
+      return;
+    }
+    setFeedComments(commentsValueList => [comments, ...commentsValueList]);
+    setComments('');
+  };
+
   return (
     <div>
       <section className="main-left">
@@ -13,6 +31,11 @@ function Mainleft() {
                 alt="profilepic"
               />
               <span className="profileName">42_Junhyun</span>
+              <img
+                className="dot"
+                alt="dot"
+                src="images/junhyunPark/more.png"
+              />
             </div>
             <img
               className="dogPic"
@@ -61,23 +84,43 @@ function Mainleft() {
               <br />
               <h4 className="yumyumID">yum_yum</h4>
               <span>맞팔해요~👨🏻‍💻 </span>
-              <img
-                className="heartMini"
-                src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-                alt="miniHeart"
-              />
-              <h4 className="chatMin">42분 전</h4>
-            </div>
 
-            <div className="BoxComment">
+              <h4 className="chatMin">42분 전</h4>
+
+              <div>
+                <ul className="feedComments">
+                  {feedComments.map((el, idx) => (
+                    <li key={idx}>
+                      <span className="commId">jp_ </span> {feedComments[idx]}
+                      <img
+                        className="delete"
+                        alt="delete"
+                        src="images/junhyunPark/bin.png"
+                      />
+                      <img
+                        className="heartMini"
+                        src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
+                        alt="miniHeart"
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <div className="BoxComment" onSubmit={onSubmit}>
+            <form className="commentWrap">
               <input
                 className="commentBox"
                 type="text "
                 placeholder="댓글 달기..."
+                onChange={postComments}
+                value={comments}
               />
               <button>게시</button>
-            </div>
-          </article>
+            </form>
+          </div>
         </div>
       </section>
     </div>

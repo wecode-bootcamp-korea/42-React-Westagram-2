@@ -14,13 +14,11 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const saveUserId = e => {
-    const inputVal = e.target.value;
-    setInput(inputVal);
+    setInput(e.target.value);
   };
 
   const saveUserPw = e => {
-    const passwordVal = e.target.value;
-    setPassword(passwordVal);
+    setPassword(e.target.value);
   };
   // 비밀 번호가 5와 같거나 크면 로그인 버튼이 활성화 아니면 비활성화
 
