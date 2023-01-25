@@ -1,10 +1,13 @@
 import React from 'react';
 import './Main.scss';
-import { StoryLi, RecommendLi } from '../../../components/Li/ProfileLi';
+import {
+  ProfileStory,
+  ProfileRecommend,
+} from '../../../components/Profile/Profile';
 import { Article } from '../../../components/Article/Article';
 import { Nav } from '../../../components/Nav/Nav';
 
-function MainEunjung() {
+const MainEunjung = () => {
   return (
     <div className="main">
       <Nav />
@@ -29,15 +32,15 @@ function MainEunjung() {
               <span className="fontBold">모두 보기</span>
             </div>
             <ul className="storyUl">
-              <StoryLi
+              <ProfileStory
                 profileName="samsaek"
                 path="images/eunjungSung/recommend-img1.png"
               />
-              <StoryLi
+              <ProfileStory
                 profileName="jjonkdduck"
                 path="images/eunjungSung/recommend-img2.png"
               />
-              <StoryLi
+              <ProfileStory
                 profileName="donggul"
                 path="images/eunjungSung/recommend-img3.png"
               />
@@ -50,15 +53,15 @@ function MainEunjung() {
               <span className="fontBold">모두 보기</span>
             </div>
             <ul className="recommendUl">
-              <RecommendLi
+              <ProfileRecommend
                 profileName="anonymous1"
                 path="images/eunjungSung/recommend-img1.png"
               />
-              <RecommendLi
+              <ProfileRecommend
                 profileName="anonymous2"
                 path="images/eunjungSung/recommend-img2.png"
               />
-              <RecommendLi
+              <ProfileRecommend
                 profileName="anonymous3"
                 path="images/eunjungSung/recommend-img3.png"
               />
@@ -68,6 +71,6 @@ function MainEunjung() {
       </main>
     </div>
   );
-}
+};
 
 export default MainEunjung;

@@ -9,3 +9,17 @@
   height: 24px;
   padding-top: 10px;
 }
+
+@mixin profileDiv {
+  flex-direction: column;
+  gap: 2px;
+}
+
+@mixin profileSpan {
+  width: 140px;
+  height: 18px;
+  margin-top: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

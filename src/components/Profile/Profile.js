@@ -1,9 +1,9 @@
 import React from 'react';
-import './ProfileLi.scss';
+import './Profile.scss';
 
-function StoryLi({ path, profileName }) {
+const ProfileStory = ({ path, profileName }) => {
   return (
-    <li className="storyLi">
+    <li className="profileStory">
       <img className="profileImg" alt="Profile Img" src={path} />
       <div className="profileDiv">
         <span className="fontBold">{profileName}</span>
@@ -11,12 +11,12 @@ function StoryLi({ path, profileName }) {
       </div>
     </li>
   );
-}
+};
 
-function RecommendLi({ path, profileName }) {
+const ProfileRecommend = ({ path, profileName }) => {
   return (
-    <li className="recommendLi">
-      <div className="liDiv">
+    <li className="profileRecommend">
+      <div className="recommendDiv">
         <img className="profileImg" alt="Profile Img" src={path} />
         <div className="profileDiv">
           <span className="fontBold">{profileName}</span>
@@ -28,6 +28,6 @@ function RecommendLi({ path, profileName }) {
       <span className="colorBlue">팔로우</span>
     </li>
   );
-}
+};
 
-export { StoryLi, RecommendLi };
+export { ProfileStory, ProfileRecommend };

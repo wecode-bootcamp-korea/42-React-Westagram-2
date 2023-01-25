@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import './Article.scss';
+import { Comment } from '../Comment/Comment';
 
-function Article() {
+const Article = () => {
   const [commentInput, setCommentInput] = useState('');
   const [commentArr, setCommentArr] = useState([]);
 
   const saveCommentInput = e => {
     setCommentInput(e.target.value);
   };
-
-  console.log(commentInput);
 
   const onSubmit = e => {
     e.preventDefault();
@@ -66,16 +65,13 @@ function Article() {
       </div>
 
       {/* 댓글 입력 */}
-      <div className="commentWrapper">
+      <div className="comments">
         {commentArr.length > 0 ? (
           <p className="colorGray">댓글 {commentArr.length}개</p>
         ) : null}
         <ul className="commentUl">
-          {commentArr.map((newComment, index) => (
-            <li key={index} className="commentLi">
-              <span className="fontBold">beozzi__</span>
-              {newComment}
-            </li>
+          {commentArr.map((index, newComment) => (
+            <Comment key={index} newComment={newComment} />
           ))}
         </ul>
         <span className="colorGray">17분 전</span>
@@ -92,6 +88,6 @@ function Article() {
       </div>
     </article>
   );
-}
+};
 
 export { Article };
