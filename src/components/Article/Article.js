@@ -87,9 +87,7 @@ function Article() {
             placeholder="댓글 달기..."
             onChange={saveCommentInput}
           />
-          <button className="commentBtn" type="button">
-            게시
-          </button>
+          <button className="commentBtn">게시</button>
         </form>
       </div>
     </article>
