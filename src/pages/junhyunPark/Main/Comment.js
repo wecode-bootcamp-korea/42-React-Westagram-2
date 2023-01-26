@@ -2,8 +2,9 @@ import React from 'react';
 
 const Comment = props => {
   return (
-    <li key={idx}>
-      <span className="commId">jp_ </span> {feedComments[idx]}
+    <li>
+      <span className="commId">jp_ </span>
+      {props.el}
       <img className="delete" alt="delete" src="images/junhyunPark/bin.png" />
       <img
         className="heartMini"
