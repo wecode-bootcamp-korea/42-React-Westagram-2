@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import Comment from './Comment';
+
 function Mainleft() {
   const [comments, setComments] = useState('');
 
@@ -89,21 +91,10 @@ function Mainleft() {
 
               <div className="commWrap">
                 <ul className="feedComments">
-                  {feedComments.map((el, idx) => (
-                    <li key={idx}>
-                      <span className="commId">jp_ </span> {feedComments[idx]}
-                      <img
-                        className="delete"
-                        alt="delete"
-                        src="images/junhyunPark/bin.png"
-                      />
-                      <img
-                        className="heartMini"
-                        src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"
-                        alt="miniHeart"
-                      />
-                    </li>
-                  ))}
+                  {feedComments.map((el, idx) => {
+                    console.log(el); // el이 뭔지 알아야 합니다.
+                    return <Comment key={idx} el={el} />;
+                  })}
                 </ul>
               </div>
             </div>
