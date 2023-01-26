@@ -87,7 +87,7 @@ function Mainleft() {
 
               <h4 className="chatMin">42분 전</h4>
 
-              <div>
+              <div className="commWrap">
                 <ul className="feedComments">
                   {feedComments.map((el, idx) => (
                     <li key={idx}>

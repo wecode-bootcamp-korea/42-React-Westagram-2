@@ -189,25 +189,30 @@
             font-weight: 300;
             margin-top: auto;
           }
-          .feedComments {
-            display: flex;
-            flex-direction: column-reverse;
-            // overflow-y: scroll;
-            .commId {
-              font-weight: bold;
-              margin-left: 10px;
-              margin-right: 10px;
-            }
 
-            .delete {
-              width: 15px;
-              float: right;
-              margin-right: 15px;
-            }
-            .heartMini {
-              width: 15px;
-              float: right;
-              margin-right: 10px;
+          .commWrap {
+            height: 100px;
+            // overflow-y: scroll;
+            .feedComments {
+              display: flex;
+              flex-direction: column-reverse;
+              // overflow-y: scroll;
+              .commId {
+                font-weight: bold;
+                margin-left: 10px;
+                margin-right: 10px;
+              }
+
+              .delete {
+                width: 15px;
+                float: right;
+                margin-right: 15px;
+              }
+              .heartMini {
+                width: 15px;
+                float: right;
+                margin-right: 10px;
+              }
             }
           }
         }
