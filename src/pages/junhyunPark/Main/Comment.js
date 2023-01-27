@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Comment = props => {
+  const { el } = props;
   return (
     <li>
       <span className="commId">jp_ </span>
-      {props.el}
+      {el}
       <img className="delete" alt="delete" src="images/junhyunPark/bin.png" />
       <img
         className="heartMini"
