@@ -91,9 +91,9 @@ function Mainleft() {
 
               <div className="commWrap">
                 <ul className="feedComments">
-                  {feedComments.map((el, idx) => (
+                  {feedComments.map(el => (
                     // console.log(el); // el이 뭔지 알아야 합니다.
-                    <Comment key={idx} el={el} />
+                    <Comment key={comments.id} el={el} />
                   ))}
                 </ul>
               </div>
