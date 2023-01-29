@@ -1,6 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Comments from './Comments';
 
 const Article = () => {
+  const [user] = useState('noname123');
+  const [comment, setComment] = useState('');
+  const [commentList, setCommentList] = useState([]);
+  const saveComment = e => setComment(e.target.value);
+  const post = e => {
+    const copyCommentList = [...commentList];
+    copyCommentList.push(comment);
+    setCommentList(copyCommentList);
+    setComment('');
+  };
+  const postByEnter = e => {
+    if (e.keyCode === 13) {
+      post();
+    }
+  };
+  const showComments = commentList.map((com, i) => (
+    <Comments userName={user} usercomments={com} key={i} />
+  ));
+
   return (
     <div className="article">
       <div className="userLine">
@@ -29,10 +49,21 @@ const Article = () => {
         <img src="images/hansolKim/profile.png" alt="profile" />
         <span>barcode님 외 3명이 좋아합니다</span>
       </div>
-      <div className="commentBox" />
+      <div className="commentBox">{showComments}</div>
       <div className="commentLine">
-        <input type="text" placeholder="댓글달기..." />
-        <button className="postBtn">게시</button>
+        <input
+          type="text"
+          placeholder="댓글달기..."
+          onChange={saveComment}
+          onKeyUp={postByEnter}
+        />
+        <button
+          className="postBtn"
+          onClick={post}
+          disabled={!(comment.length > 0)}
+        >
+          게시
+        </button>
       </div>
     </div>
   );

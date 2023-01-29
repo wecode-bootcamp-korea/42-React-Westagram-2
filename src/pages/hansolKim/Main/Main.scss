@@ -112,6 +112,9 @@ img {
         }
         .commentBox {
           min-height: 80px;
+          font-size: 12px;
+          font-weight: bold;
+          padding-left: 10px;
         }
         .commentLine {
           position: relative;
@@ -126,8 +129,12 @@ img {
             right: 15px;
             border: none;
             background-color: #ffffff;
-            color: #c4e1fb;
+            color: #0095f6;
             cursor: pointer;
+            &:disabled {
+              color: #c4e1fb;
+              cursor: default;
+            }
           }
         }
       }
