@@ -13,7 +13,7 @@ const Article = () => {
     setComment('');
   };
   const postByEnter = e => {
-    if (e.keyCode === 13) {
+    if (e.keyCode === 13 && comment.length > 0) {
       post();
     }
   };
