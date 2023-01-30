@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Main.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -8,8 +8,21 @@ import {
   faArrowUpFromBracket,
   faBookmark,
 } from '@fortawesome/free-solid-svg-icons';
+import CommentInput from './commentInput';
 
 const MainHeylynn = () => {
+  const [input, setInput] = useState('');
+  const [commentList, setCommentList] = useState([]);
+  const onChangeInput = e => {
+    setInput(e.target.value);
+    console.log(input);
+  };
+  const onClickComment = e => {
+    setCommentList([...commentList, input]);
+    e.preventDefault();
+    setInput('');
+  };
+
   return (
     <div className="mainHeylynn">
       <nav>
@@ -52,7 +65,7 @@ const MainHeylynn = () => {
                   <div className="imageConatiner">
                     <img
                       className="image"
-                      src="images/heylynnShin/profile_me.jpg"
+                      src="images/heylynnShin/heylynn_profile.jpg"
                       alt="profile pic"
                     />
                   </div>
@@ -67,7 +80,6 @@ const MainHeylynn = () => {
                 className="feedImage"
               />
             </section>
-
             <div className="belowFeedImage">
               <section className="feedIconContainer">
                 <div className="iconContainer">
@@ -109,14 +121,17 @@ const MainHeylynn = () => {
                 </div>
               </section>
             </div>
-            <section className="commentContainer">
+            <CommentInput comment={commentList} />
+            <form onSubmit={onClickComment} className="commentContainer">
               <input
+                value={input}
+                onChange={onChangeInput}
                 type="text"
                 placeholder="댓글 달기..."
                 className="inputComment"
               />
               <button className="postComment">게시</button>
-            </section>
+            </form>
           </article>
         </div>
 

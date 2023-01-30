@@ -162,7 +162,16 @@
             font-size: 12px;
             border: none;
           }
-          .postComment {
+          // .postComment {
+          //   color: lightskyblue;
+          //   background-color: transparent;
+          //   border: none;
+          .submitCommentActive {
+            color: #0095f6;
+            background-color: transparent;
+            border: none;
+          }
+          .submitCommentInactive {
             color: lightskyblue;
             background-color: transparent;
             border: none;
@@ -170,29 +179,29 @@
         }
       }
     }
-    .feedsRightContainer {
-      display: flex;
-      width: 30%;
-      height: 100%;
-      .feedsRight {
-        width: 100%;
-        flex-direction: column;
-        .profile {
-          height: 50px;
-          border: 1px solid lightgray;
-        }
-        .story {
-          height: 150px;
-          border: 1px solid lightgray;
-        }
-        .recommendation {
-          height: 130px;
-          border: 1px solid lightgray;
-        }
-        .footer {
-          height: 60px;
-          border: 1px solid lightgray;
-        }
+  }
+  .feedsRightContainer {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    .feedsRight {
+      width: 100%;
+      flex-direction: column;
+      .profile {
+        height: 50px;
+        border: 1px solid lightgray;
+      }
+      .story {
+        height: 150px;
+        border: 1px solid lightgray;
+      }
+      .recommendation {
+        height: 130px;
+        border: 1px solid lightgray;
+      }
+      .footer {
+        height: 60px;
+        border: 1px solid lightgray;
       }
     }
   }
