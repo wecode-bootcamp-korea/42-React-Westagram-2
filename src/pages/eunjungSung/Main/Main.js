@@ -1,9 +1,7 @@
 import React from 'react';
 import './Main.scss';
-import {
-  ProfileStory,
-  ProfileRecommend,
-} from '../../../components/Profile/Profile';
+import { ProfileStory } from '../../../components/Profile/ProfileStory';
+import { ProfileRecommend } from '../../../components/Profile/ProfileRecommend';
 import { Article } from '../../../components/Article/Article';
 import { Nav } from '../../../components/Nav/Nav';
 
@@ -31,20 +29,7 @@ const MainEunjung = () => {
               <span className="colorGray">스토리</span>
               <span className="fontBold">모두 보기</span>
             </div>
-            <ul className="storyUl">
-              <ProfileStory
-                profileName="samsaek"
-                path="images/eunjungSung/recommend-img1.png"
-              />
-              <ProfileStory
-                profileName="jjonkdduck"
-                path="images/eunjungSung/recommend-img2.png"
-              />
-              <ProfileStory
-                profileName="donggul"
-                path="images/eunjungSung/recommend-img3.png"
-              />
-            </ul>
+            <ProfileStory />
           </div>
 
           <div className="profileWrapper">
@@ -52,20 +37,7 @@ const MainEunjung = () => {
               <span className="colorGray">회원님을 위한 추천</span>
               <span className="fontBold">모두 보기</span>
             </div>
-            <ul className="recommendUl">
-              <ProfileRecommend
-                profileName="anonymous1"
-                path="images/eunjungSung/recommend-img1.png"
-              />
-              <ProfileRecommend
-                profileName="anonymous2"
-                path="images/eunjungSung/recommend-img2.png"
-              />
-              <ProfileRecommend
-                profileName="anonymous3"
-                path="images/eunjungSung/recommend-img3.png"
-              />
-            </ul>
+            <ProfileRecommend />
           </div>
         </div>
       </main>

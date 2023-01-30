@@ -1,0 +1,27 @@
+@import '../../styles/mixin.scss';
+@import '../../styles/common.scss';
+
+.profileStory {
+  @include flex(left, null);
+  flex-direction: column;
+  padding-left: 0px;
+
+  .storyLi {
+    @include flex(left, center);
+    margin-bottom: 15px;
+    gap: 10px;
+
+    .profileImg {
+      @include imgSize;
+    }
+
+    .profileDiv {
+      @include flex(left, null);
+      @include profileDiv;
+
+      .colorGray {
+        @include profileSpan;
+      }
+    }
+  }
+}

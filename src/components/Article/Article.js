@@ -19,6 +19,9 @@ const Article = () => {
     setCommentInput('');
   };
 
+  console.log(commentInput);
+  console.log(commentArr);
+
   return (
     <article className="article">
       <div className="profileWrapper">
@@ -70,7 +73,7 @@ const Article = () => {
           <p className="colorGray">댓글 {commentArr.length}개</p>
         ) : null}
         <ul className="commentUl">
-          {commentArr.map((index, newComment) => (
+          {commentArr.map((newComment, index) => (
             <Comment key={index} newComment={newComment} />
           ))}
         </ul>

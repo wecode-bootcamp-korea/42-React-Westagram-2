@@ -1,9 +1,9 @@
 import React from 'react';
 import './Comment.scss';
 
-const Comment = ({ key, newComment }) => {
+const Comment = ({ newComment }) => {
   return (
-    <li key={key} className="comment">
+    <li className="comment">
       <span className="fontBold">beozzi__</span>
       {newComment}
     </li>

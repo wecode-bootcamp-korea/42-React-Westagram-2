@@ -1,0 +1,37 @@
+@import '../../styles/mixin.scss';
+@import '../../styles/common.scss';
+
+.profileRecommend {
+  @include flex(space-between, null);
+  flex-direction: column;
+  padding-left: 0px;
+
+  .recommendLi {
+    @include flex(space-between, center);
+    margin-bottom: 15px;
+    gap: 10px;
+
+    .recommendDiv {
+      @include flex(left, center);
+      gap: 10px;
+
+      .profileImg {
+        @include imgSize;
+      }
+
+      .profileDiv {
+        @include flex(left, null);
+        @include profileDiv;
+
+        .colorGray {
+          @include profileSpan;
+        }
+      }
+    }
+
+    .blueB {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  }
+}

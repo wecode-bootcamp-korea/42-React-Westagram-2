@@ -43,18 +43,6 @@
           @include flex(space-between, center);
           margin-bottom: 20px;
         }
-
-        .storyUl {
-          @include flex(left, null);
-          flex-direction: column;
-          padding-left: 0px;
-        }
-
-        .recommendUl {
-          @include flex(space-between, null);
-          flex-direction: column;
-          padding-left: 0px;
-        }
       }
     }
   }
