@@ -1,4 +1,5 @@
 import React from 'react';
+import { FOOTER_INFO_LIST } from './data';
 
 function MainRight() {
   return (
@@ -95,17 +96,17 @@ function MainRight() {
             </div>
           </div>
 
-          <div className="pageInfo">
-            <h4>
-              Westagram 정보﹒지원﹒홍보센터﹒API﹒
-              <br />
-              채용정보﹒개인정보처리방침﹒약관﹒
-              <br />
-              디렉터리﹒프로필﹒해시태그﹒언어
-              <br />
-              <br />@ 2023 WESTAGRAM
-            </h4>
-          </div>
+          <footer>
+            <ul className="pageInfo">
+              {FOOTER_INFO_LIST.map(info => (
+                <li key={info.id}>
+                  <a className="linkInfo" href={info.link}>
+                    {info.text}﹒
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </footer>
         </div>
       </section>
     </div>

@@ -411,7 +411,16 @@
         .pageInfo {
           font-size: 13px;
           margin: 20px 10px;
-          color: grey;
+
+          display: flex;
+          flex-wrap: wrap;
+          text-decoration: none;
+
+          .linkInfo {
+            text-decoration: none;
+            color: grey;
+            margin: 20px 3px;
+          }
         }
       }
     }
