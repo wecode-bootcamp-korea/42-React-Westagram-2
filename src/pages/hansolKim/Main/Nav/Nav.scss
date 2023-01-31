@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    .navbar-left {
+      font-family: 'Lobster';
+      font-size: 25px;
+    }
+    .navbar-center {
+      .search {
+        width: 230px;
+        padding: 5px;
+        background-color: #fafafa;
+        border: 1px solid #dbdbdb;
+        text-align: center;
+      }
+    }
+    .navbar-right {
+      img {
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }

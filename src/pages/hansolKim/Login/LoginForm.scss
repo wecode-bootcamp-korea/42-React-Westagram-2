@@ -1,0 +1,43 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    .logo {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-family: 'Lobster';
+      font-size: 25px;
+    }
+    input {
+      width: 80%;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #dbdbdb;
+      font-size: 12px;
+    }
+    button {
+      width: 80%;
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      background-color: #0095f6;
+      color: white;
+      cursor: pointer;
+
+      &:disabled {
+        background-color: #c4e1fb;
+        cursor: default;
+      }
+    }
+    .findPw {
+      margin-top: 110px;
+      font-size: 12px;
+      color: #1b4776;
+    }
+  }

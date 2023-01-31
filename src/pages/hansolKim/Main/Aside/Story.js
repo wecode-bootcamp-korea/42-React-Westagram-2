@@ -1,11 +1,12 @@
 import React from 'react';
+import './Story.scss';
 
 const Story = () => {
   return (
     <div className="story">
       <div className="storyLine">
-        <span className="text2">스토리</span>
-        <span className="text3">모두보기</span>
+        <span className="storyText">스토리</span>
+        <span className="storyRightText">모두보기</span>
       </div>
     </div>
   );

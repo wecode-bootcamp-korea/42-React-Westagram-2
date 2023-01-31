@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './LoginForm.scss';
 
-const Login1 = () => {
+const LoginForm = () => {
   const navigate = useNavigate();
   const navigateToMain = () => {
     navigate('/main-hansol');
@@ -16,7 +17,7 @@ const Login1 = () => {
   };
 
   return (
-    <>
+    <div className="loginForm">
       <div className="logo">westagram</div>
       <input
         type="text"
@@ -36,8 +37,8 @@ const Login1 = () => {
         로그인
       </button>
       <div className="findPw">비밀번호를 잊으셨나요?</div>
-    </>
+    </div>
   );
 };
 
-export default Login1;
+export default LoginForm;

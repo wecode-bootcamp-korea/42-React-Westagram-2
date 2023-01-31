@@ -1,0 +1,85 @@
+.article {
+    width: 500px;
+    padding-left: 30px;
+    background-color: #fafafa;
+    .articleForm {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      min-height: 300px;
+      margin-top: 100px;
+      background-color: #ffffff;
+      border: 1px solid #dbdbdb;
+      .userLine {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        .userLine-left {
+          display: flex;
+          align-items: center;
+          padding-left: 5px;
+          span {
+            padding-left: 5px;
+            font-weight: bold;
+            font-size: 12px;
+          }
+        }
+      }
+      .imageLine {
+        img {
+          width: 450px;
+          height: 450px;
+        }
+      }
+      .imojiLine {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        .imoji-left {
+          padding: 5px;
+          img {
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+          }
+        }
+      }
+      .likeLine {
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        span {
+          padding-left: 3px;
+          font-weight: bold;
+          font-size: 12px;
+        }
+      }
+      .commentBox {
+        min-height: 80px;
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+      .commentLine {
+        position: relative;
+        input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #dbdbdb;
+        }
+        .postBtn {
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          border: none;
+          background-color: #ffffff;
+          color: #0095f6;
+          cursor: pointer;
+          &:disabled {
+            color: #c4e1fb;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }

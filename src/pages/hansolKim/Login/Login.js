@@ -1,14 +1,12 @@
 import React from 'react';
-import Login1 from './Login1';
+import LoginForm from './LoginForm';
 import './Login.scss';
 
 const Login = () => {
   return (
     <section>
       <div className="loginLayout">
-        <div className="loginPage">
-          <Login1 />
-        </div>
+        <LoginForm />
       </div>
     </section>
   );

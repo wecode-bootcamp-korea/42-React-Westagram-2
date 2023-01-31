@@ -1,0 +1,19 @@
+.recommend {
+    width: 250px;
+    height: 120px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    .recommendLine {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      .recommendText{
+        font-size: 12px;
+        color: #9b9b9b;
+      }
+      .recommendRightText {
+        font-size: 12px;
+      }
+    }
+  }
