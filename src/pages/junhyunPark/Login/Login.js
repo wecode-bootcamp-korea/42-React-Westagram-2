@@ -1,6 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.scss';
 
 const Login = () => {
@@ -20,7 +20,6 @@ const Login = () => {
   const saveUserPw = e => {
     setPassword(e.target.value);
   };
-  // 비밀 번호가 5와 같거나 크면 로그인 버튼이 활성화 아니면 비활성화
 
   const isDisabled = input.includes('@') && password.length >= 5 ? false : true;
 
@@ -50,7 +49,6 @@ const Login = () => {
           <div className="buttonBox">
             <button
               type="button"
-              // className={isDisabled ? 'btnLogin' : 'btnLoginabled'}
               className="btnLogin"
               onClick={goToMain}
               disabled={isDisabled}

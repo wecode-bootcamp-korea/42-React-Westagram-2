@@ -15,7 +15,6 @@
     border-bottom: 1px solid #dbdbdb;
     z-index: 100;
 
-    /* box-sizing: border-box; */
     .nav-item {
       display: flex;
       justify-content: space-evenly;
@@ -36,12 +35,6 @@
 
       .inputName {
         margin: 20px 50px 0px 50px;
-        // text-align: center;
-        // background-color: #fafafa;
-        // border-radius: 3px;
-        // width: 180px;
-        // height: 20px;
-        // border: 1px solid #dbdbdb;
         position: relative;
 
         input {
@@ -81,7 +74,6 @@
   main {
     display: flex;
     position: relative;
-    /* border: 2px solid green; */
     margin-top: 53px;
     justify-content: center;
 
@@ -89,17 +81,14 @@
       padding: 15px;
 
       .feeds {
-        // border: 2px solid red;
         width: 530px;
         height: 720px;
         display: inline-block;
         padding: 28px 0px 10px 0px;
 
-        /* box-sizing: border-box; */
         .article {
           background-color: white;
           border: 1px solid #dbdbdb;
-          /* padding: 20px; */
           height: 680px;
           margin-top: 10px;
           font-size: 15px;
@@ -169,8 +158,6 @@
             .likeInfo {
               margin-left: 10px;
               font-weight: bold;
-              // position: absolute;
-              // margin-top: -15px;
             }
           }
           .ondalID {
@@ -192,11 +179,11 @@
 
           .commWrap {
             height: 100px;
-            // overflow-y: scroll;
+
             .feedComments {
               display: flex;
               flex-direction: column-reverse;
-              // overflow-y: scroll;
+
               .commId {
                 font-weight: bold;
                 margin-left: 10px;
@@ -219,8 +206,6 @@
       }
     }
     .BoxComment {
-      // display: flex;
-      /* margin-top: 100px; */
       margin-top: 0px;
       position: relative;
       width: 530px;
@@ -229,20 +214,16 @@
       background-color: white;
       padding: 1px;
       .commentBox {
-        // position: absolute;
         width: 480px;
         height: 45px;
         border: 0px solid #dbdbdb;
-        // border-right: 0px;
       }
       button {
         position: absolute;
-        // margin-left: 50px;
         background-color: white;
         width: 44px;
         height: 45px;
         border: 0px solid #dbdbdb;
-
         color: #3a6ea5;
         cursor: pointer;
       }

@@ -1,7 +1,6 @@
-import './Main.scss';
-
 import MainLeft from './MainLeft';
 import MainRight from './MainRight';
+import './Main.scss';
 
 const MainPage = () => {
   return (

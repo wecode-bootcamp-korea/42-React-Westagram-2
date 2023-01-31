@@ -25,13 +25,13 @@
       }
       input {
         width: 100%;
-        padding: 5px;
+        // padding: 5px;
         margin-bottom: 8px;
         border-radius: 5px;
         padding: 7px 7px;
         border: 1px solid lightgrey;
         background-color: #fafafa;
-        box-sizing: border-box;
+        // box-sizing: border-box;
       }
       .btnLogin {
         width: 100%;
@@ -49,18 +49,6 @@
           cursor: default;
         }
       }
-
-      // .btnLoginabled {
-      //   width: 100%;
-      //   background-color: #0395f6;
-      //   color: white;
-      //   border: 1px solid white;
-      //   border-radius: 5px;
-      //   padding: 3px;
-      //   margin-top: 8px;
-      //   padding: 5px;
-      //   cursor: pointer;
-      // }
 
       .forgotPw {
         position: absolute;
