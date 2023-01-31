@@ -2,6 +2,7 @@ import React from 'react';
 import Story from './Story';
 import Recommend from './Recommend';
 import Username from './Username';
+import { Copy_Right_List } from './data';
 import './Aside.scss';
 
 const Aside = () => {
@@ -11,8 +12,12 @@ const Aside = () => {
       <Story />
       <Recommend />
       <div className="copyright normalText">
-        Westagram 정보 . 지원 . 홍보센터 . API . 채용 정보 . 개인정보처리방침 .
-        약관 . 디렉터리 . 프로필 . 해시태그 . 언어 {'\n'} {'\n'}ⓒ 2023 WESTAGRAM
+        {Copy_Right_List.map(info => (
+          <span key={info.id}>
+            <a href="http://instagram.com">{info.listName}</a>
+          </span>
+        ))}
+        <div>2023 westagram</div>
       </div>
     </section>
   );
