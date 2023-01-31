@@ -2,9 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import Comment from './Comment';
 
-function Mainleft() {
+function Mainleft({ feed }) {
   const [comments, setComments] = useState('');
-
   const postComments = e => {
     const commentsValue = e.target.value;
     setComments(commentsValue);
@@ -27,17 +26,19 @@ function Mainleft() {
         <div className="feeds">
           <article className="article">
             <div className="profile">
-              <img
-                className="proFilePic"
-                src="images/junhyunPark/me1.jpg"
-                alt="profilepic"
-              />
-              <span className="profileName">42_Junhyun</span>
-              <img
-                className="dot"
-                alt="dot"
-                src="images/junhyunPark/more.png"
-              />
+              <div>
+                <img
+                  className="proFilePic"
+                  alt="User Profile Img"
+                  src={feed.id_image}
+                />
+                <span className="profileName">{feed.id}</span>
+                <img
+                  className="dot"
+                  alt="dot"
+                  src="images/junhyunPark/more.png"
+                />
+              </div>
             </div>
             <img
               className="dogPic"

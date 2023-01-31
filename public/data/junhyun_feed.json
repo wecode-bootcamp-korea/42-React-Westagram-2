@@ -1,0 +1,34 @@
+[
+  {
+    "id": "42_Junhyun",
+    "id_image": "images/junhyunPark/me1.jpg",
+    "image_dot": "images/junhyunPark/more.png",
+    "feed_image": "images/junhyunPark/IMG_2510.JPG",
+    "heart_icon": "images/junhyunPark/heart.png",
+    "chat_icon": "images/junhyunPark/chat.png",
+    "send_icon": "images/junhyunPark/send.png",
+    "mark_icon": "images/junhyunPark/mark.png",
+    "id_ondal_images": "images/junhyunPark/IMG_2510.JPG",
+    "feed_liked": "ondal님 외 42명이 좋아 합니다",
+    "id_ondal": "ondal",
+    "id_ondal_comment": "Nice pic ~ :)",
+    "id_yumyum": "yum_yum",
+    "id_yumyum_comment": "맞팔해요~👨🏻‍💻"
+  },
+  {
+    "id": "52_Junhyun",
+    "id_image": "images/junhyunPark/me1.jpg",
+    "image_dot": "images/junhyunPark/more.png",
+    "feed_image": "images/junhyunPark/IMG_2510.JPG",
+    "heart_icon": "images/junhyunPark/heart.png",
+    "chat_icon": "images/junhyunPark/chat.png",
+    "send_icon": "images/junhyunPark/send.png",
+    "mark_icon": "images/junhyunPark/mark.png",
+    "id_ondal_images": "images/junhyunPark/IMG_2510.JPG",
+    "feed_liked": "ondal님 외 42명이 좋아 합니다",
+    "id_ondal": "ondal",
+    "id_ondal_comment": "Nice pic ~ :)",
+    "id_yumyum": "yum_yum",
+    "id_yumyum_comment": "맞팔해요~👨🏻‍💻"
+  }
+]
