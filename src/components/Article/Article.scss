@@ -5,22 +5,22 @@
   margin-right: 100px;
   border: 1px solid lightgray;
   background: white;
+  margin-bottom: 30px;
 
   .profileWrapper {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     text-align: center;
-  }
 
-  .profileLeft {
-    @include flex(center, center);
-    gap: 10px;
-  }
-
-  .menuImg {
-    width: 16px;
-    height: 16px;
+    .profileLeft {
+      @include flex(center, center);
+      gap: 10px;
+    }
+    .menuImg {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   .articleImg {
@@ -31,11 +31,11 @@
   .functionWrapper {
     @include flex(space-between, center);
     padding: 10px;
-  }
 
-  .functionRight {
-    display: flex;
-    gap: 10px;
+    .functionRight {
+      display: flex;
+      gap: 10px;
+    }
   }
 
   .likeWrapper {

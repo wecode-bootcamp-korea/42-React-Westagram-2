@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Comment.scss';
 
 const Comment = ({ newComment }) => {
   const emptyheart = 'images/eunjungSung/emptyheart.png';
   const fullHeart = 'images/eunjungSung/fullheart.png';
+
   const [onClick, setOnClick] = useState(false);
+
   const onClickLike = () => {
     setOnClick(prev => {
       return !prev;

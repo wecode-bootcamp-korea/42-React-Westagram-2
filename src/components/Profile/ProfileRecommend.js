@@ -1,10 +1,18 @@
-import { PROFILE_RECOMMEND_DATA } from '../../data/profileRecommendData';
+import { useEffect, useState } from 'react';
 import './ProfileRecommend.scss';
 
 const ProfileRecommend = () => {
+  const [profiles, setProfile] = useState([]);
+
+  useEffect(() => {
+    fetch('/data/profileRecommendData.json')
+      .then(response => response.json())
+      .then(json => setProfile(json));
+  }, []);
+
   return (
     <ul className="profileRecommend">
-      {PROFILE_RECOMMEND_DATA.map(profile => {
+      {profiles.map(profile => {
         return (
           <li className="recommendLi" key={profile.id}>
             <div className="recommendDiv">
