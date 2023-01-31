@@ -23,7 +23,7 @@ const Article = () => {
   ));
 
   return (
-    <div className="article">
+    <section className="article">
       <div className="articleForm">
         <div className="userLine">
           <div className="userLine-left">
@@ -68,7 +68,7 @@ const Article = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

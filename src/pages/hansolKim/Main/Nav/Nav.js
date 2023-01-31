@@ -3,7 +3,7 @@ import './Nav.scss';
 
 const Nav = () => {
   return (
-    <div className="nav">
+    <section className="nav">
       <div className="navbar-left">westagram</div>
       <div className="navbar-center">
         <input className="search" type="text" placeholder="검색" />
@@ -16,7 +16,7 @@ const Nav = () => {
         <img src="images/hansolKim/heart.png" alt="heart" />
         <img src="images/hansolKim/profile.png" alt="profile" />
       </div>
-    </div>
+    </section>
   );
 };
 
