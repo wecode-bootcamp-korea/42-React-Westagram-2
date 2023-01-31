@@ -1,6 +1,7 @@
-import { SERVICE_DATA } from '../../data/serviceData';
-import { ProfileRecommend } from '../Profile/ProfileRecommend';
+import React from 'react';
 import { ProfileStory } from '../Profile/ProfileStory';
+import { ProfileRecommend } from '../Profile/ProfileRecommend';
+import { SERVICE_DATA } from '../../data/serviceData';
 import './Aside.scss';
 
 const Aside = () => {

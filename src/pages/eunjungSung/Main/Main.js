@@ -1,8 +1,8 @@
 import React from 'react';
-import './Main.scss';
-import { Article } from '../../../components/Article/Article';
 import { Nav } from '../../../components/Nav/Nav';
+import { Article } from '../../../components/Article/Article';
 import { Aside } from '../../../components/Aside/Aside';
+import './Main.scss';
 
 const MainEunjung = () => {
   return (

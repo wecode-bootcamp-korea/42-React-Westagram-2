@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Article.scss';
 import { Comment } from '../Comment/Comment';
+import './Article.scss';
 
 const Article = () => {
   const [commentInput, setCommentInput] = useState('');

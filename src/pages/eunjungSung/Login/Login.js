@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Login.scss';
 import { Link, useNavigate } from 'react-router-dom';
+import './Login.scss';
 
 const LoginEunjung = () => {
   // 로그인 유효성 검사
