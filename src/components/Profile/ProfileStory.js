@@ -1,20 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { PROFILE_STORY_DATA } from '../../data/profileStoryData';
 import './ProfileStory.scss';
 
 const ProfileStory = () => {
-  const [profileStory, setprofileStory] = useState([]);
-
-  useEffect(() => {
-    fetch('../data/profileStory.json')
-      .then(response => response.json())
-      .then(json => {
-        setprofileStory(json);
-      });
-  }, []);
-
   return (
     <ul className="profileStory">
-      {profileStory.map(profile => {
+      {PROFILE_STORY_DATA.map(profile => {
         return (
           <li className="storyLi" key={profile.id}>
             <img className="profileImg" alt="Profile Img" src={profile.path} />

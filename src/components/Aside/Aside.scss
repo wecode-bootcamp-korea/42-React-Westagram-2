@@ -1,0 +1,54 @@
+@import '../../styles/mixin.scss';
+
+.aside {
+  .myProfileWrapper {
+    @include flex(null, center);
+    height: 36px;
+    margin-bottom: 20px;
+
+    .myProfileImg {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+      margin-bottom: 0px;
+    }
+
+    .profileId {
+      font-size: 18px;
+    }
+  }
+
+  .profileWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    background: white;
+
+    .titleWrapper {
+      @include flex(space-between, center);
+      margin-bottom: 20px;
+    }
+  }
+
+  .serviceWrapper {
+    width: 250px;
+    padding: 10px;
+
+    .serviceUl {
+      .serviceLi {
+        float: left;
+        padding: 3px;
+
+        .serviceA {
+          text-decoration: none;
+          color: gray;
+          font-weight: bold;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

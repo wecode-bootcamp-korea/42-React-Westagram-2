@@ -1,5 +1,4 @@
 @import '../../styles/mixin.scss';
-@import '../../styles/common.scss';
 
 .article {
   width: 454px;
@@ -63,6 +62,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 454px;
     }
 
     .commentForm {

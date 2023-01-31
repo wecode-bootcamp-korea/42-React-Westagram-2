@@ -19,9 +19,6 @@ const Article = () => {
     setCommentInput('');
   };
 
-  console.log(commentInput);
-  console.log(commentArr);
-
   return (
     <article className="article">
       <div className="profileWrapper">
@@ -57,7 +54,7 @@ const Article = () => {
           src="images/eunjungSung/recommend-img1.png"
         />
         <span>
-          <span className="fontBold">samsaek3</span>님{' '}
+          <span className="fontBold">samsaek3</span>님&nbsp;
           <span className="fontBold">외 319명</span>이 좋아합니다
         </span>
       </div>
@@ -67,7 +64,6 @@ const Article = () => {
         <span>안녕하새오 버찌애오</span>
       </div>
 
-      {/* 댓글 입력 */}
       <div className="comments">
         {commentArr.length > 0 ? (
           <p className="colorGray">댓글 {commentArr.length}개</p>
