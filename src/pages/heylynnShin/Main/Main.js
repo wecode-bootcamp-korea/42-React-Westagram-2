@@ -25,7 +25,7 @@ const Main = () => {
   };
 
   return (
-    <div className="mainHeylynn">
+    <div className="main">
       <nav>
         <div className="logo">
           <img
