@@ -4,7 +4,7 @@ import { Article } from '../../../components/Article/Article';
 import { Aside } from '../../../components/Aside/Aside';
 import './Main.scss';
 
-const MainEunjung = () => {
+const Main = () => {
   return (
     <div className="main">
       <Nav />
@@ -18,4 +18,4 @@ const MainEunjung = () => {
   );
 };
 
-export default MainEunjung;
+export default Main;

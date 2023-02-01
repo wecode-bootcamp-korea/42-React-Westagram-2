@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.scss';
 
-const LoginEunjung = () => {
+const Login = () => {
   // 로그인 유효성 검사
   const [userId, setUserId] = useState('');
   const [userPw, setUserPw] = useState('');
@@ -68,4 +68,4 @@ const LoginEunjung = () => {
   );
 };
 
-export default LoginEunjung;
+export default Login;
