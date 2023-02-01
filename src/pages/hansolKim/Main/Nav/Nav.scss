@@ -7,6 +7,7 @@
     padding: 10px;
     width: 100%;
     border-bottom: 1px solid #dbdbdb;
+    z-index: 2;
     .navbar-left {
       font-family: 'Lobster';
       font-size: 25px;
@@ -26,5 +27,17 @@
         width: 20px;
         height: 20px;
       }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .navbar-center {
+      display: none;
+    }
+  }  
+  
+  @media (max-width: 600px) {
+    .navbar-right {
+      display: none;
     }
   }

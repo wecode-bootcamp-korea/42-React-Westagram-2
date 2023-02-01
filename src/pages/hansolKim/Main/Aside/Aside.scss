@@ -1,7 +1,11 @@
 .aside {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    position: fixed;
+    right:0;
+    margin-right: 150px;
+    width: 200px;
+    height: 100%;
     background-color: #fafafa;
     .copyright {
       margin-top: 10px;
@@ -15,5 +19,11 @@
           color: #9b9b9b;
         }
       }
+    }
+  }
+
+  @media (max-width: 1160px) {
+    .aside {
+      display: none;
     }
   }
