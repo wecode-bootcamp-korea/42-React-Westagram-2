@@ -1,0 +1,116 @@
+.asideContainer {
+  display: flex;
+
+  .feedsRight {
+    width: 80%;
+    flex-direction: column;
+
+    .profile {
+      height: 60px;
+      display: flex;
+      align-items: center;
+
+      .profileContainer {
+        display: flex;
+        align-items: center;
+
+        .imageConatiner {
+          border-radius: 70%;
+          overflow: hidden;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+
+          .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .idContainer {
+          padding-left: 10px;
+
+          .id {
+            font-size: 13px;
+            font-weight: bold;
+          }
+
+          .idInfo {
+            font-size: 13px;
+            color: gray;
+          }
+        }
+      }
+    }
+
+    .storyContainer {
+      height: 160px;
+      border: 1px solid lightgray;
+      overflow: hidden;
+      padding: 10px;
+      background-color: white;
+
+      .textContainer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+
+        .story {
+          color: gray;
+          font-weight: 500;
+        }
+
+        .all {
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .recommendation {
+      height: 150px;
+      border: 1px solid lightgray;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: white;
+
+      .textContainer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+
+        .forYou {
+          color: gray;
+          font-weight: 500;
+        }
+
+        .all {
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer {
+      padding-top: 10px;
+      font-size: 12px;
+      width: 85%;
+
+      .footerMenu li {
+        display: inline;
+
+        a {
+          text-decoration: none;
+          color: lightgray;
+        }
+      }
+
+      p {
+        color: lightgray;
+        padding-top: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}
