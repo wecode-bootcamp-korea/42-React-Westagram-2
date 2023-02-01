@@ -22,8 +22,8 @@ const ProfileRecommend = () => {
                 src={profile.path}
               />
               <div className="profileDiv">
-                <span className="fontBold">{profile.profileName}</span>
-                <span className="colorGray">{profile.friends}</span>
+                <span className="fontBold">{profile.profileId}</span>
+                <span className="colorGray">{profile.following}</span>
               </div>
             </div>
             <span className="colorBlue">팔로우</span>

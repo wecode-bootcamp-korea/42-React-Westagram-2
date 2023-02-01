@@ -13,6 +13,12 @@ const Article = () => {
       .then(json => setArticles(json));
   }, []);
 
+  useEffect(() => {
+    fetch('/data/commentData.json')
+      .then(response => response.json())
+      .then(json => setCommentArr(json));
+  }, []);
+
   const saveCommentInput = e => {
     setCommentInput(e.target.value);
   };
@@ -22,8 +28,19 @@ const Article = () => {
     if (commentInput === '') {
       return;
     }
-    setCommentArr(currentArr => [commentInput, ...currentArr]);
+
+    setCommentArr(
+      commentArr.concat({
+        id: commentArr.length + 1,
+        content: commentInput,
+        profileId: 'beozzi__',
+      })
+    );
     setCommentInput('');
+  };
+
+  const removeComment = id => {
+    return setCommentArr(commentArr.filter(comment => comment.id !== id));
   };
 
   return (
@@ -37,7 +54,7 @@ const Article = () => {
                 alt="Myprofile Img"
                 src={article.profileImg}
               />
-              <span className="fontBold">{article.profileName}</span>
+              <span className="fontBold">{article.profileId}</span>
             </div>
             <img
               className="menuImg"
@@ -69,7 +86,7 @@ const Article = () => {
                   src="images/eunjungSung/recommend-img1.png"
                 />
                 <span>
-                  <span className="fontBold">{article.likedProfile}</span>
+                  <span className="fontBold">{article.likedProfileId}</span>
                   님&nbsp;
                   <span className="fontBold">외 {article.totalLikes}명</span>이
                   좋아합니다
@@ -79,17 +96,21 @@ const Article = () => {
           </div>
 
           <div className="descWrapper">
-            <span className="fontBold">{article.profileName}</span>
+            <span className="fontBold">{article.profileId}</span>
             <span>{article.articleDesc}</span>
           </div>
 
-          <div className="comments">
+          <div className="commentWrapper">
             {commentArr.length > 0 ? (
               <p className="colorGray">댓글 {commentArr.length}개</p>
             ) : null}
             <ul className="commentUl">
-              {commentArr.map((newComment, index) => (
-                <Comment key={index} newComment={newComment} />
+              {commentArr.map((comment, index) => (
+                <Comment
+                  key={index}
+                  comment={comment}
+                  removeComment={removeComment}
+                />
               ))}
             </ul>
             <span className="colorGray">{article.time}</span>

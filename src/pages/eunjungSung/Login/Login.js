@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Login.scss';
 
 const Login = () => {
-  // 로그인 유효성 검사
   const [userId, setUserId] = useState('');
   const [userPw, setUserPw] = useState('');
   const [btnDisabled, setbtnDisabled] = useState(true);
@@ -22,7 +21,6 @@ const Login = () => {
       : setbtnDisabled(true);
   };
 
-  // 페이지 이동
   const navigate = useNavigate();
   const goToMain = () => {
     navigate('/main-eunjung');

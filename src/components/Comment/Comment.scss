@@ -2,7 +2,8 @@
 @import '../../styles/common.scss';
 
 .comment {
-  @include flex(null, center);
+  @include flex(space-between, center);
+  width: 443px;
   margin: 0 10px 15px 10px;
   gap: 5px;
 
@@ -14,28 +15,30 @@
     }
 
     .commentP {
-      width: 310px;
       word-break: break-all;
     }
   }
 
-  .heartBtn {
-    @include flex(center, center);
-    background-color: white;
-    border: none;
-    margin: 0px;
-    cursor: pointer;
+  .commentFuncDiv {
+    @include flex(null, right);
+    .heartBtn {
+      @include flex(center, center);
+      background-color: white;
+      border: none;
+      margin: 0px;
+      cursor: pointer;
 
-    .heartBtnImg {
-      width: 12px;
-      height: 12px;
+      .heartBtnImg {
+        width: 12px;
+        height: 12px;
+      }
     }
-  }
 
-  .deleteBtn {
-    border-style: none;
-    background-color: white;
-    color: gray;
-    cursor: pointer;
+    .deleteBtn {
+      border-style: none;
+      background-color: white;
+      color: gray;
+      cursor: pointer;
+    }
   }
 }
