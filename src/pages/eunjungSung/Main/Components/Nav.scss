@@ -1,6 +1,5 @@
-@import '../../styles/mixin.scss';
-@import '../../styles/common.scss';
-
+@import '../../../../styles/mixin.scss';
+@import '../../../../styles/common.scss';
 .nav {
   @include flex(space-around, center);
   height: 40px;
@@ -31,10 +30,15 @@
     padding: 2px;
     border: 1px solid lightgray;
     border-radius: 5px;
-    background: url('../../assets/eunjungSung/search.png') center no-repeat;
+    background: url('../../../../assets/eunjungSung/search.png') center
+      no-repeat;
     background-position: 10px center;
     color: gray;
     text-align: center;
+  }
+
+  .searchBar:focus {
+    outline: none;
   }
 
   .navRight {

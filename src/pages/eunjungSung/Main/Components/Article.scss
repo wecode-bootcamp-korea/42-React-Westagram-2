@@ -1,0 +1,69 @@
+@import '../../../../styles/mixin.scss';
+
+.article {
+  width: 454px;
+  margin-right: 100px;
+  border: 1px solid lightgray;
+  background: white;
+  margin-bottom: 30px;
+
+  .profileWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+
+    .profileLeft {
+      @include flex(center, center);
+      gap: 10px;
+    }
+    .menuImg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .articleImg {
+    width: 454px;
+    height: 454px;
+  }
+
+  .functionWrapper {
+    @include flex(space-between, center);
+    padding: 10px;
+
+    .heartBtn {
+      @include flex(center, center);
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      background-color: white;
+      cursor: pointer;
+
+      .heartBtnImg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .functionRight {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .likeWrapper {
+    @include flex(left, center);
+    text-align: center;
+  }
+
+  .likeImg {
+    margin: 0px 10px;
+  }
+
+  .descWrapper {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+  }
+}

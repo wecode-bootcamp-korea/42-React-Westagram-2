@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Comment.scss';
 
-const Comment = ({ comment, removeComment }) => {
+const Comment = ({ comment, commentData, removeComment }) => {
   const emptyheart = 'images/eunjungSung/emptyheart.png';
   const fullHeart = 'images/eunjungSung/fullheart.png';
 
@@ -16,14 +16,14 @@ const Comment = ({ comment, removeComment }) => {
   return (
     <li className="comment">
       <div className="commentDiv">
-        <span className="fontBold">{comment.profileId || `beozzi__`}</span>
-        <p className="commentP">{comment.content || comment}</p>
+        <span className="fontBold">{commentData.profileId || 'beozzi__'}</span>
+        <p className="commentP">{commentData.content || comment}</p>
       </div>
       <div className="commentFuncDiv">
         <button className="heartBtn" type="button" onClick={onClickLike}>
           <img
             className="heartBtnImg"
-            alt="Empty Heart Img"
+            alt="Heart Img"
             src={onClick ? fullHeart : emptyheart}
           />
         </button>

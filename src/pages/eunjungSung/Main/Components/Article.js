@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Comment } from '../Comment/Comment';
+import { CommentBox } from './CommentBox';
 import './Article.scss';
 
-const Article = () => {
+const Article = ({ filteredList }) => {
+  const emptyheart = 'images/eunjungSung/emptyheart.png';
+  const fullHeart = 'images/eunjungSung/fullheart.png';
   const [articles, setArticles] = useState([]);
-  const [commentInput, setCommentInput] = useState('');
-  const [commentArr, setCommentArr] = useState([]);
+  const [onClick, setOnClick] = useState(false);
 
   useEffect(() => {
     fetch('/data/articleData.json')
@@ -13,34 +14,10 @@ const Article = () => {
       .then(json => setArticles(json));
   }, []);
 
-  useEffect(() => {
-    fetch('/data/commentData.json')
-      .then(response => response.json())
-      .then(json => setCommentArr(json));
-  }, []);
-
-  const saveCommentInput = e => {
-    setCommentInput(e.target.value);
-  };
-
-  const onSubmit = e => {
-    e.preventDefault();
-    if (commentInput === '') {
-      return;
-    }
-
-    setCommentArr(
-      commentArr.concat({
-        id: commentArr.length + 1,
-        content: commentInput,
-        profileId: 'beozzi__',
-      })
-    );
-    setCommentInput('');
-  };
-
-  const removeComment = id => {
-    return setCommentArr(commentArr.filter(comment => comment.id !== id));
+  const onClickLike = () => {
+    setOnClick(prev => {
+      return !prev;
+    });
   };
 
   return (
@@ -70,7 +47,13 @@ const Article = () => {
 
           <div className="functionWrapper">
             <div className="functionRight">
-              <img alt="Heart Img" src="images/eunjungSung/emptyheart.png" />
+              <button className="heartBtn" type="button" onClick={onClickLike}>
+                <img
+                  className="heartBtnImg"
+                  alt="Heart Img"
+                  src={onClick ? fullHeart : emptyheart}
+                />
+              </button>
               <img alt="Comment Img" src="images/eunjungSung/comment.png" />
               <img alt="Upload Img" src="images/eunjungSung/upload.png" />
             </div>
@@ -97,34 +80,14 @@ const Article = () => {
 
           <div className="descWrapper">
             <span className="fontBold">{article.profileId}</span>
-            <span>{article.articleDesc}</span>
+            <span>{article.desc}</span>
           </div>
 
-          <div className="commentWrapper">
-            {commentArr.length > 0 ? (
-              <p className="colorGray">댓글 {commentArr.length}개</p>
-            ) : null}
-            <ul className="commentUl">
-              {commentArr.map((comment, index) => (
-                <Comment
-                  key={index}
-                  comment={comment}
-                  removeComment={removeComment}
-                />
-              ))}
-            </ul>
-            <span className="colorGray">{article.time}</span>
-            <form className="commentForm" onSubmit={onSubmit}>
-              <input
-                value={commentInput}
-                className="commentInput"
-                type="text"
-                placeholder="댓글 달기..."
-                onChange={saveCommentInput}
-              />
-              <button className="commentBtn">게시</button>
-            </form>
-          </div>
+          <CommentBox
+            key={article.id}
+            time={article.time}
+            commentData={article.comment}
+          />
         </article>
       ))}
     </>

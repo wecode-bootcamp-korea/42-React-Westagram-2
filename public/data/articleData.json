@@ -4,39 +4,59 @@
     "profileId": "beozzi__",
     "profileImg": "images/eunjungSung/myprofile.png",
     "articleImg": "images/eunjungSung/article1.jpg",
-    "articleDesc": "안녕하새오 버찌애오",
+    "desc": "안녕하새오 버찌애오",
     "likedProfileId": "anonymous",
     "totalLikes": 1,
-    "time": "1분 전"
+    "time": "1분 전",
+    "comment": {
+      "id": 1,
+      "profileId": "0donggul0",
+      "content": "귀엽다"
+    }
   },
   {
     "id": 2,
     "profileId": "0donggul0",
     "profileImg": "images/eunjungSung/userprofile1.png",
     "articleImg": "images/eunjungSung/article2.jpg",
-    "articleDesc": "빼꼼",
+    "desc": "빼꼼",
     "likedProfileId": "anonymous",
     "totalLikes": 3,
-    "time": "3분 전"
+    "time": "3분 전",
+    "comment": {
+      "id": null,
+      "profileId": null,
+      "content": null
+    }
   },
   {
     "id": 3,
     "profileId": "samsaek<3",
     "profileImg": "images/eunjungSung/userprofile2.png",
     "articleImg": "images/eunjungSung/article3.jpg",
-    "articleDesc": "냥냥펀치",
+    "desc": "냥냥펀치",
     "likedProfileId": "anonymous",
     "totalLikes": 1,
-    "time": "9분 전"
+    "time": "9분 전",
+    "comment": {
+      "id": null,
+      "profileId": null,
+      "content": null
+    }
   },
   {
     "id": 4,
     "profileId": "jjondduck2",
     "profileImg": "images/eunjungSung/userprofile3.png",
     "articleImg": "images/eunjungSung/article4.jpg",
-    "articleDesc": "셀카",
+    "desc": "셀카",
     "likedProfileId": "anonymous",
     "totalLikes": 9,
-    "time": "17분 전"
+    "time": "17분 전",
+    "comment": {
+      "id": null,
+      "profileId": null,
+      "content": null
+    }
   }
 ]

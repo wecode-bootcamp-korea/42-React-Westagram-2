@@ -1,6 +1,6 @@
-@import '../../styles/mixin.scss';
+@import '../../../../styles/mixin.scss';
 
-.article {
+.feed {
   width: 454px;
   margin-right: 100px;
   border: 1px solid lightgray;
@@ -51,43 +51,5 @@
     display: flex;
     gap: 10px;
     margin: 10px;
-  }
-
-  .commentWrapper {
-    .colorGray {
-      margin: 10px;
-    }
-
-    .commentUl {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 454px;
-    }
-
-    .commentForm {
-      border-top: 1px solid lightgray;
-      margin-top: 10px;
-
-      .commentInput {
-        width: 379px;
-        height: 30px;
-        padding: 10px;
-        border: none;
-      }
-
-      .commentInput:focus {
-        outline: none;
-      }
-
-      .commentBtn {
-        margin-right: 10px;
-        border: none;
-        background-color: white;
-        color: #458eff;
-        font-weight: bold;
-        cursor: pointer;
-      }
-    }
   }
 }

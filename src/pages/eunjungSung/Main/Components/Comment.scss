@@ -1,5 +1,5 @@
-@import '../../styles/mixin.scss';
-@import '../../styles/common.scss';
+@import '../../../../styles/mixin.scss';
+@import '../../../../styles/common.scss';
 
 .comment {
   @include flex(space-between, center);
@@ -21,6 +21,7 @@
 
   .commentFuncDiv {
     @include flex(null, right);
+
     .heartBtn {
       @include flex(center, center);
       background-color: white;

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Nav.scss';
 
-function Nav() {
+function Nav({ keyword, onChange }) {
   return (
     <nav className="nav">
       <div className="navLeft">
@@ -17,7 +17,13 @@ function Nav() {
       </div>
 
       <div className="searchWrapper">
-        <input className="searchBar" type="search" placeholder="검색" />
+        <input
+          className="searchBar"
+          type="search"
+          value={keyword}
+          placeholder="검색"
+          onChange={onChange}
+        />
       </div>
 
       <div className="navRight">

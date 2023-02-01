@@ -1,5 +1,5 @@
-import { ProfileStory } from '../Profile/ProfileStory';
-import { ProfileRecommend } from '../Profile/ProfileRecommend';
+import { ProfileStory } from './ProfileStory';
+import { ProfileRecommend } from './ProfileRecommend';
 import './Aside.scss';
 
 const Aside = () => {
