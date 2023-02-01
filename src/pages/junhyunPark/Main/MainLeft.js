@@ -33,60 +33,32 @@ function Mainleft({ feed }) {
                   src={feed.id_image}
                 />
                 <span className="profileName">{feed.id}</span>
-                <img
-                  className="dot"
-                  alt="dot"
-                  src="images/junhyunPark/more.png"
-                />
+                <img className="dot" alt="dot" src={feed.image_dot} />
               </div>
             </div>
-            <img
-              className="dogPic"
-              src="images/junhyunPark/IMG_2510.JPG"
-              alt="ondal"
-            />
+            <img className="dogPic" src={feed.feed_image} alt="ondal" />
             <div className="emoji">
               <div className="emoji-left">
-                <img
-                  className="likes"
-                  src="images/junhyunPark/heart.png"
-                  alt="likes"
-                />
-                <img
-                  className="chat"
-                  src="images/junhyunPark/chat.png"
-                  alt="chat"
-                />
-                <img
-                  className="send"
-                  src="images/junhyunPark/send.png"
-                  alt="send"
-                />
+                <img className="likes" src={feed.heart_icon} alt="likes" />
+                <img className="chat" src={feed.chat_icon} alt="chat" />
+                <img className="send" src={feed.send_icon} alt="send" />
               </div>
               <div className="emoji-right">
-                <img
-                  className="mark"
-                  src="images/junhyunPark/mark.png"
-                  alt="mark"
-                />
+                <img className="mark" src={feed.mark_icon} alt="mark" />
               </div>
             </div>
             <div className="likePic">
-              <img
-                className="ondal"
-                src="images/junhyunPark/IMG_2510.JPG"
-                alt="ondal"
-              />
+              <img className="ondal" src={feed.id_ondal_images} alt="ondal" />
               <span className="likeInfo">
-                <h4>ondal님 외 42명이 좋아 합니다 </h4>
+                <h4>{feed.feed_liked}</h4>
               </span>
             </div>
             <div className="comment">
-              <h4 className="ondalID">ondal</h4>
-              <span>Nice pic ~ :)</span>
+              <h4 className="ondalID">{feed.id_ondal}</h4>
+              <span>{feed.id_ondal_comment}</span>
               <br />
-              <h4 className="yumyumID">yum_yum</h4>
-              <span>맞팔해요~👨🏻‍💻 </span>
+              <h4 className="yumyumID">{feed.id_yumyum}</h4>
+              <span>{feed.id_yumyum_comment}</span>
 
               <h4 className="chatMin">42분 전</h4>
 
