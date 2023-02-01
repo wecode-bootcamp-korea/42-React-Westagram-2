@@ -2,8 +2,8 @@
   {
     "id": 1,
     "profileId": "beozzi__",
-    "profileImg": "images/eunjungSung/myprofile-img.png",
-    "articleImg": "images/eunjungSung/article-img1.jpg",
+    "profileImg": "images/eunjungSung/myprofile.png",
+    "articleImg": "images/eunjungSung/article1.jpg",
     "articleDesc": "안녕하새오 버찌애오",
     "likedProfileId": "anonymous",
     "totalLikes": 1,
@@ -12,9 +12,9 @@
   {
     "id": 2,
     "profileId": "0donggul0",
-    "profileImg": "images/eunjungSung/recommend-img1.png",
-    "articleImg": "images/eunjungSung/article-img2.jpg",
-    "articleDesc": "빼꼼 버찌",
+    "profileImg": "images/eunjungSung/userprofile1.png",
+    "articleImg": "images/eunjungSung/article2.jpg",
+    "articleDesc": "빼꼼",
     "likedProfileId": "anonymous",
     "totalLikes": 3,
     "time": "3분 전"
@@ -22,8 +22,8 @@
   {
     "id": 3,
     "profileId": "samsaek<3",
-    "profileImg": "images/eunjungSung/recommend-img2.png",
-    "articleImg": "images/eunjungSung/article-img3.jpg",
+    "profileImg": "images/eunjungSung/userprofile2.png",
+    "articleImg": "images/eunjungSung/article3.jpg",
     "articleDesc": "냥냥펀치",
     "likedProfileId": "anonymous",
     "totalLikes": 1,
@@ -32,8 +32,8 @@
   {
     "id": 4,
     "profileId": "jjondduck2",
-    "profileImg": "images/eunjungSung/recommend-img3.png",
-    "articleImg": "images/eunjungSung/article-img4.jpg",
+    "profileImg": "images/eunjungSung/userprofile3.png",
+    "articleImg": "images/eunjungSung/article4.jpg",
     "articleDesc": "셀카",
     "likedProfileId": "anonymous",
     "totalLikes": 9,

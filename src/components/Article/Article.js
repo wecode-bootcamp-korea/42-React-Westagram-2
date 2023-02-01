@@ -83,7 +83,7 @@ const Article = () => {
                 <img
                   className="likeImg"
                   alt="Profile Img"
-                  src="images/eunjungSung/recommend-img1.png"
+                  src="images/eunjungSung/userprofile1.png"
                 />
                 <span>
                   <span className="fontBold">{article.likedProfileId}</span>

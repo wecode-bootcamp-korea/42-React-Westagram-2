@@ -9,7 +9,7 @@ const Aside = () => {
         <img
           className="myProfileImg"
           alt="Profile Img"
-          src="images/eunjungSung/myprofile-img.png"
+          src="images/eunjungSung/myprofile.png"
         />
         <span className="fontBold">beozzi__</span>
       </div>

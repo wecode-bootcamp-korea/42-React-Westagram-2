@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "profileId": "beozzi__",
+    "path": "images/eunjungSung/myprofile.png",
+    "follower": null,
+    "time": null,
+    "following": true
+  },
+  {
+    "id": 2,
+    "profileId": "0donggul0",
+    "path": "images/eunjungSung/userprofile1.png",
+    "follower": null,
+    "time": "1시간",
+    "following": true
+  },
+  {
+    "id": 3,
+    "profileId": "samsaek<3",
+    "path": "images/eunjungSung/userprofile2.png",
+    "follower": null,
+    "time": "3시간",
+    "following": true
+  },
+  {
+    "id": 4,
+    "profileId": "jjondduck2",
+    "path": "images/eunjungSung/userprofile3.png",
+    "follower": null,
+    "time": "9시간",
+    "following": true
+  },
+  {
+    "id": 5,
+    "profileId": "anonymous1",
+    "path": "images/eunjungSung/userprofile1.png",
+    "follower": "0donggul0님 외 2명이 팔로우하고 있습니다",
+    "time": null,
+    "following": false
+  },
+  {
+    "id": 6,
+    "profileId": "anonymous2",
+    "path": "images/eunjungSung/userprofile1.png",
+    "follower": "0donggul0님 외 2명이 팔로우하고 있습니다",
+    "time": null,
+    "following": false
+  },
+  {
+    "id": 7,
+    "profileId": "anonymous3",
+    "path": "images/eunjungSung/userprofile1.png",
+    "follower": "0donggul0님 외 2명이 팔로우하고 있습니다",
+    "time": null,
+    "following": false
+  }
+]
