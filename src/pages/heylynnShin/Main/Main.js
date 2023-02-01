@@ -11,7 +11,7 @@ import {
 import CommentInput from './CommentInput';
 import Footer from './Footer';
 
-const MainHeylynn = () => {
+const Main = () => {
   const [input, setInput] = useState('');
   const [commentList, setCommentList] = useState([]);
   const onChangeInput = e => {
@@ -19,8 +19,8 @@ const MainHeylynn = () => {
     console.log(input);
   };
   const onClickComment = e => {
-    setCommentList([...commentList, input]);
     e.preventDefault();
+    setCommentList([...commentList, input]);
     setInput('');
   };
 
@@ -151,4 +151,4 @@ const MainHeylynn = () => {
   );
 };
 
-export default MainHeylynn;
+export default Main;

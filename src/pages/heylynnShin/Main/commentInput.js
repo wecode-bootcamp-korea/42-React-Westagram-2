@@ -1,6 +1,4 @@
-const CommentInput = props => {
-  const { comment } = props;
-
+const CommentInput = ({ comment }) => {
   return (
     <ul>
       {comment.map(comment => (

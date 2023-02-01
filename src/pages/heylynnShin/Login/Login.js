@@ -1,9 +1,8 @@
-import { isValidDateValue } from '@testing-library/user-event/dist/utils';
 import React, { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Login.scss';
 
-const LoginHeylynn = () => {
+const Login = () => {
   const [userId, setUserId] = useState('');
   const [userPw, setUserPw] = useState('');
   console.log(userId, 'userId');
@@ -23,17 +22,17 @@ const LoginHeylynn = () => {
       ? setActive(true)
       : setActive(false);
   };
-
+  const navigate = useNavigate();
   const goToMain = () => {
     if (userId.includes('@') && userPw.length >= 5) {
-      Navigate('/main-heylynn');
+      navigate('/main-heylynn');
     } else {
       alert('회원 정보를 다시 입력해주세요.');
     }
   };
 
   return (
-    <main className="loginHeylynn">
+    <main className="login">
       <div className="inner">
         <header className="header">
           <h1>Westagram</h1>
@@ -60,7 +59,7 @@ const LoginHeylynn = () => {
               type="button"
               className={active ? 'activeBtn' : 'btn'} // "btn"
               onClick={goToMain}
-              disabled={userId === '' || userPw === '' ? true : false}
+              disabled={userId || userPw ? true : false}
             >
               <span>로그인</span>
             </button>
@@ -76,4 +75,4 @@ const LoginHeylynn = () => {
   );
 };
 
-export default LoginHeylynn;
+export default Login;
