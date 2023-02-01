@@ -202,6 +202,14 @@
       .footer {
         height: 60px;
         border: 1px solid lightgray;
+        font-size: 10px;
+        .footerMenu li {
+          display: inline;
+          a {
+            text-decoration: none;
+            color: gray;
+          }
+        }
       }
     }
   }

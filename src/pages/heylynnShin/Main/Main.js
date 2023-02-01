@@ -8,7 +8,8 @@ import {
   faArrowUpFromBracket,
   faBookmark,
 } from '@fortawesome/free-solid-svg-icons';
-import CommentInput from './commentInput';
+import CommentInput from './CommentInput';
+import Footer from './Footer';
 
 const MainHeylynn = () => {
   const [input, setInput] = useState('');
@@ -140,7 +141,9 @@ const MainHeylynn = () => {
             <div className="profile"></div>
             <div className="story"></div>
             <div className="recommendation"></div>
-            <footer className="footer"></footer>
+            <div className="footer">
+              <Footer />
+            </div>
           </section>
         </div>
       </main>
