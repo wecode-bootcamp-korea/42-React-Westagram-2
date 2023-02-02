@@ -1,11 +1,11 @@
 import React from 'react';
-import { FOOTER_INFO_LIST } from './data';
+import { FOOTER_INFO_LIST } from './FooterInfoList';
 
 function MainRight() {
   return (
     <div>
-      <section className="main-right">
-        <div className="side-bar">
+      <section className="mainRight">
+        <div className="sideBar">
           <div className="bootCamp">
             <img
               className="bcPic"
@@ -23,25 +23,25 @@ function MainRight() {
             <div className="storyPic">
               <div>
                 <img
-                  className="_we_"
+                  className="wE"
                   src="images/junhyunPark/_we_.png"
                   alt="we1"
                 />
-                <h4 className="_we_2">_we_</h4>
-                <h4 className="_we_3">42초 전</h4>
+                <h4 className="wE2">_we_</h4>
+                <h4 className="wE3">42초 전</h4>
               </div>
               <div>
                 <img
-                  className="code_"
+                  className="coDe"
                   src="images/junhyunPark/code._..png"
                   alt="pinkPIc"
                 />
-                <h4 className="code_2">code._.</h4>
-                <h4 className="code_3">42분 전 </h4>
+                <h4 className="coDe2">code._.</h4>
+                <h4 className="coDe3">42분 전 </h4>
               </div>
               <div>
                 <img
-                  className="forty"
+                  className="forTy"
                   src="images/junhyunPark/42.png"
                   alt="42"
                 />
@@ -62,36 +62,36 @@ function MainRight() {
             </div>
           </div>
 
-          <div className="recommend">
+          <div className="reCommend">
             <div className="recommendFor">회원님을 위한 추천</div>
             <div>모두 보기</div>
             <div className="recommendPic">
               <div>
                 <img
-                  className="recom1"
+                  className="reCom1"
                   src="images/junhyunPark/wecode.png"
                   alt=""
                 />
-                <h4 className="recom2">wecode_bootcamp</h4>
-                <h4 className="recom3">_we_ 님 외 12명이... </h4>
+                <h4 className="reCom2">wecode_bootcamp</h4>
+                <h4 className="reCom3">_we_ 님 외 12명이... </h4>
               </div>
               <div>
                 <img
-                  className="recom1"
+                  className="reCom1"
                   src="images/junhyunPark/wecode.png"
                   alt=""
                 />
-                <h4 className="recom2">wecode_bootcamp</h4>
-                <h4 className="recom3">_we_ 님 외 12명이... </h4>
+                <h4 className="reCom2">wecode_bootcamp</h4>
+                <h4 className="reCom3">_we_ 님 외 12명이... </h4>
               </div>
               <div>
                 <img
-                  className="recom1"
+                  className="reCom1"
                   src="images/junhyunPark/wecode.png"
                   alt=""
                 />
-                <h4 className="recom2">wecode_bootcamp</h4>
-                <h4 className="recom3">_we_ 님 외 12명이... </h4>
+                <h4 className="reCom2">wecode_bootcamp</h4>
+                <h4 className="reCom3">_we_ 님 외 12명이... </h4>
               </div>
             </div>
           </div>

@@ -12,15 +12,12 @@ const MainPage = () => {
       method: 'GET',
     })
       .then(res => res.json())
-      .then(data => {
-        setFeed(data);
-      });
+      .then(data => setFeed(data));
   }, []);
 
   return (
     <div className="mainPage">
       <div className="inner">
-        {/* <Nav /> */}
         <main>
           <div className="main-left-container">
             {feeds.map(feed => (

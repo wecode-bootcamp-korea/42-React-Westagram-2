@@ -77,23 +77,23 @@
     margin-top: 53px;
     justify-content: center;
 
-    .main-left {
+    .mainLeft {
       padding: 15px;
       transform: translate(-30%, 0);
 
-      .feeds {
+      .feeDs {
         width: 530px;
         display: inline-block;
         padding: 28px 0px 10px 0px;
 
-        .article {
+        .artiCle {
           background-color: white;
           border: 1px solid #dbdbdb;
           height: 680px;
           margin-top: 10px;
           font-size: 15px;
 
-          .profile {
+          .proFile {
             position: relative;
             margin-left: 10px;
             margin-top: 10px;
@@ -122,24 +122,24 @@
             width: 529px;
             height: 400px;
           }
-          .emoji {
+          .emoJi {
             display: flex;
             justify-content: space-between;
-            .emoji-left {
+            .emojiLeft {
               margin-top: 10px;
-              .likes {
+              .liKes {
                 width: 30px;
                 margin-left: 20px;
               }
-              .chat {
+              .chAt {
                 width: 30px;
                 margin: 0px 15px 0px 15px;
               }
-              .send {
+              .sEnd {
                 width: 30px;
               }
             }
-            .mark {
+            .mArk {
               width: 30px;
               margin-right: 10px;
               margin-top: 10px;
@@ -150,7 +150,7 @@
             align-items: center;
             margin: 0px 10px 0px 10px;
 
-            .ondal {
+            .onDal {
               width: 25px;
               height: 25px;
               border-radius: 20px;
@@ -182,7 +182,7 @@
 
             .feedComments {
               display: flex;
-              flex-direction: column-reverse;
+              flex-direction: column;
 
               .commId {
                 font-weight: bold;
@@ -229,15 +229,14 @@
         cursor: pointer;
       }
     }
-    // @media screen and (max-width: 1800px) {
-    .main-right {
+
+    .mainRight {
       margin-left: 10px;
       padding: 10px;
       position: fixed;
       transform: translate(-40%, 0);
-      // display: none;
 
-      .side-bar {
+      .sideBar {
         width: 300px;
         height: 600px;
         display: inline-block;
@@ -289,47 +288,47 @@
             width: 250px;
             height: 165px;
             padding-left: 10px;
-            ._we_ {
+            .wE {
               width: 30px;
               height: 30px;
               border-radius: 20px;
               margin-top: 8px;
             }
 
-            ._we_2 {
+            .wE2 {
               position: absolute;
               display: inline-block;
               margin: 7px 0px 0px 10px;
               font-weight: bold;
             }
-            ._we_3 {
+            .wE3 {
               position: absolute;
               display: inline-block;
               margin: 22px 0px 0px 10px;
               font-weight: 400;
               color: grey;
             }
-            .code_ {
+            .coDe {
               width: 30px;
               height: 30px;
               border-radius: 20px;
               margin-top: 8px;
             }
 
-            .code_2 {
+            .coDe2 {
               position: absolute;
               display: inline-block;
               margin: 7px 0px 0px 10px;
               font-weight: bold;
             }
-            .code_3 {
+            .coDe3 {
               position: absolute;
               display: inline-block;
               margin: 22px 0px 0px 10px;
               font-weight: 400;
               color: grey;
             }
-            .forty {
+            .forTy {
               width: 30px;
               height: 30px;
               border-radius: 20px;
@@ -371,7 +370,7 @@
             }
           }
         }
-        .recommend {
+        .reCommend {
           border: 1px solid #dbdbdb;
           margin-top: 10px;
           padding: 10px;
@@ -391,19 +390,19 @@
             height: 165px;
             padding-left: 10px;
 
-            .recom1 {
+            .reCom1 {
               width: 30px;
               height: 30px;
               border-radius: 20px;
               margin-top: 8px;
             }
-            .recom2 {
+            .reCom2 {
               position: absolute;
               display: inline-block;
               margin: 7px 0px 0px 10px;
               font-weight: bold;
             }
-            .recom3 {
+            .reCom3 {
               position: absolute;
               display: inline-block;
               margin: 22px 0px 0px 10px;
