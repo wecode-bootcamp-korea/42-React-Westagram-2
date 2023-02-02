@@ -27,6 +27,18 @@
         width: 20px;
         height: 20px;
       }
+      .profileBtn {
+        cursor: pointer;
+        position: relative;
+      }
+    }
+    .hideMenu {
+      display: none;
+    }
+    .showMenu {
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
 

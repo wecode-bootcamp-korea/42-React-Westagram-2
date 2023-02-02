@@ -3,7 +3,6 @@ import Feed from './Feed';
 import './Feedlist.scss';
 
 const Feedlist = ({ feedlist }) => {
-  console.log(feedlist);
   return (
     <div className="feedlist">
       {feedlist.map(feed => (

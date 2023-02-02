@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './Comments.scss';
 
-const Comments = props => {
+const Comments = com => {
   const [heartImg, setHeartImg] = useState('images/hansolKim/heart.png');
+  console.log(com.commentId);
   return (
-    <div className="comments">
+    <div className="comments" key={com.id}>
       <div>
-        {props.userName} {props.usercomments}
+        {com.userName} {com.usercomments}
       </div>
       <div className="commentEmoji">
         <img
@@ -18,8 +19,15 @@ const Comments = props => {
             )
           }
           src={heartImg}
+          alt="heart"
         />
-        <img src="images/hansolKim/remove.png" />
+        <img
+          src="images/hansolKim/remove.png"
+          alt="remove"
+          // onClick={() => {
+          //   removeComment(com.id);
+          // }}
+        />
       </div>
     </div>
   );

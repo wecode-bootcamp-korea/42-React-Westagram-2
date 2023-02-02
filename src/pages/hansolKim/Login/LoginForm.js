@@ -3,12 +3,31 @@ import { useNavigate } from 'react-router-dom';
 import './LoginForm.scss';
 
 const LoginForm = () => {
-  const navigate = useNavigate();
-  const navigateToMain = () => {
-    navigate('/main-hansol');
-  };
   const [id, setId] = useState('');
   const [pw, setPw] = useState('');
+  const navigate = useNavigate();
+
+  const navigateToMain = () => {
+    fetch('http://10.58.52.229:3000/user/signin', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify({
+        email: id,
+        password: pw,
+      }),
+    })
+      .then(response => response.json())
+      .then(response => {
+        console.log(response);
+        if (response.accessToken) {
+          localStorage.setItem('login-token', response.accessToken);
+          navigate('/main-hansol');
+        }
+      });
+  };
+
   const saveUserId = e => {
     setId(e.target.value);
   };
@@ -16,6 +35,21 @@ const LoginForm = () => {
     setPw(e.target.value);
   };
 
+  const signup = () => {
+    fetch('http://10.58.52.229:3000/user/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify({
+        email: id,
+        password: pw,
+      }),
+    })
+      .then(response => response.json())
+      .then(response => console.log(response));
+  };
+  const token = localStorage.getItem('login-token');
   return (
     <div className="loginForm">
       <div className="logo">westagram</div>
@@ -32,10 +66,12 @@ const LoginForm = () => {
       />
       <button
         onClick={navigateToMain}
+        //onClick={signin}
         disabled={!(id.includes('@') && pw.length >= 5)}
       >
         로그인
       </button>
+      <button onClick={signup}>회원가입</button>
       <div className="findPw">비밀번호를 잊으셨나요?</div>
     </div>
   );

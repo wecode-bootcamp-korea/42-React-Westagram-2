@@ -1,9 +1,8 @@
 .aside {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    right:0;
-    margin-right: 150px;
+    position: sticky;
+    top:0;
     width: 200px;
     height: 100%;
     background-color: #fafafa;

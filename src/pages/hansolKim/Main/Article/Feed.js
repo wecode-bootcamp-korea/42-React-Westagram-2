@@ -3,7 +3,6 @@ import Comments from './Comments';
 import './Feed.scss';
 
 const Feed = ({ feed }) => {
-  //   console.log(feed);
   const { id, image, user } = feed;
   const [userId] = useState('noname123');
   const [comment, setComment] = useState('');
@@ -22,7 +21,7 @@ const Feed = ({ feed }) => {
   };
 
   return (
-    <div className="feed">
+    <div className="feed" key={id}>
       <div className="userLine">
         <div className="userLine-left">
           <img src="images/hansolKim/colorprofile.png" alt="colorprofile" />
@@ -51,7 +50,12 @@ const Feed = ({ feed }) => {
       </div>
       <div className="commentBox">
         {commentList.map(com => (
-          <Comments userName={userId} usercomments={com} key={com.id} />
+          <Comments
+            userName={userId}
+            usercomments={com}
+            key={commentList.indexOf(com)}
+            commentId={commentList.length}
+          />
         ))}
       </div>
       <div className="commentLine">
