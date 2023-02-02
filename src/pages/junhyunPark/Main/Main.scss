@@ -1,0 +1,431 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  height: 380vh;
+  .nav {
+    margin: 0;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 100;
+
+    .nav-item {
+      display: flex;
+      justify-content: space-evenly;
+      .logo {
+        width: 30px;
+        margin-right: 5px;
+        margin-bottom: -5px;
+      }
+
+      .dash {
+        width: 30px;
+        margin-bottom: -5px;
+      }
+      .letterLogo {
+        display: inline-block;
+        font-family: 'lobster', cursive;
+      }
+
+      .inputName {
+        margin: 20px 50px 0px 50px;
+        position: relative;
+
+        input {
+          text-align: center;
+          background-color: #fafafa;
+          border-radius: 3px;
+          width: 180px;
+          height: 20px;
+          border: 1px solid #dbdbdb;
+        }
+
+        .inputPic {
+          position: absolute;
+          width: 15px;
+          top: 4px;
+          left: 55px;
+          margin: 0;
+        }
+      }
+      .topRight {
+        margin-top: 15px;
+        .heart {
+          margin: 0px 16px 0px 16px;
+          width: 30px;
+        }
+
+        .Compass {
+          width: 30px;
+        }
+
+        .myPage {
+          width: 30px;
+        }
+      }
+    }
+  }
+  main {
+    display: flex;
+    position: relative;
+    margin-top: 53px;
+    justify-content: center;
+
+    .mainLeft {
+      padding: 15px;
+      transform: translate(-30%, 0);
+
+      .feeDs {
+        width: 530px;
+        display: inline-block;
+        padding: 28px 0px 10px 0px;
+
+        .artiCle {
+          background-color: white;
+          border: 1px solid #dbdbdb;
+          height: 680px;
+          margin-top: 10px;
+          font-size: 15px;
+
+          .proFile {
+            position: relative;
+            margin-left: 10px;
+            margin-top: 10px;
+
+            .proFilePic {
+              width: 40px;
+              border: 1px solid white;
+              border-radius: 20px;
+              display: inline-block;
+            }
+
+            .profileName {
+              position: absolute;
+              margin-top: 13px;
+              margin-left: 10px;
+              font-weight: bold;
+            }
+            .dot {
+              width: 20px;
+              float: right;
+              margin-right: 20px;
+              margin-top: 10px;
+            }
+          }
+          .dogPic {
+            width: 529px;
+            height: 400px;
+          }
+          .emoJi {
+            display: flex;
+            justify-content: space-between;
+            .emojiLeft {
+              margin-top: 10px;
+              .liKes {
+                width: 30px;
+                margin-left: 20px;
+              }
+              .chAt {
+                width: 30px;
+                margin: 0px 15px 0px 15px;
+              }
+              .sEnd {
+                width: 30px;
+              }
+            }
+            .mArk {
+              width: 30px;
+              margin-right: 10px;
+              margin-top: 10px;
+            }
+          }
+          .likePic {
+            display: flex;
+            align-items: center;
+            margin: 0px 10px 0px 10px;
+
+            .onDal {
+              width: 25px;
+              height: 25px;
+              border-radius: 20px;
+            }
+            .likeInfo {
+              margin-left: 10px;
+              font-weight: bold;
+            }
+          }
+          .ondalID {
+            display: inline-block;
+            margin: 10px 10px 0px 10px;
+            font-weight: bold;
+          }
+          .yumyumID {
+            display: inline-block;
+            margin: 10px 10px 0px 10px;
+            font-weight: bold;
+          }
+
+          .chatMin {
+            margin-left: 10px;
+            font-weight: 300;
+            margin-top: auto;
+          }
+
+          .commWrap {
+            height: 100px;
+
+            .feedComments {
+              display: flex;
+              flex-direction: column;
+
+              .commId {
+                font-weight: bold;
+                margin-left: 10px;
+                margin-right: 10px;
+              }
+
+              .delete {
+                width: 15px;
+                float: right;
+                margin-right: 15px;
+              }
+              .heartMini {
+                width: 15px;
+                float: right;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .BoxComment {
+      margin-top: 0px;
+      position: relative;
+      width: 530px;
+      height: 50px;
+      border: 1px solid #dbdbdb;
+      background-color: white;
+      padding: 1px;
+
+      .commentBox {
+        width: 480px;
+        height: 45px;
+        border: 0px solid #dbdbdb;
+      }
+      button {
+        position: absolute;
+        background-color: white;
+        width: 44px;
+        height: 45px;
+        border: 0px solid #dbdbdb;
+        color: #3a6ea5;
+        cursor: pointer;
+      }
+    }
+
+    .mainRight {
+      margin-left: 10px;
+      padding: 10px;
+      position: fixed;
+      transform: translate(-40%, 0);
+
+      .sideBar {
+        width: 300px;
+        height: 600px;
+        display: inline-block;
+
+        .bootCamp {
+          position: relative;
+          margin-left: 10px;
+          margin-top: 10px;
+          .bcPic {
+            width: 40px;
+            border: 1px solid white;
+            border-radius: 20px;
+            display: inline-block;
+          }
+
+          .weCode {
+            position: absolute;
+            display: inline-block;
+            margin: 7px 0px 0px 10px;
+            font-weight: bold;
+          }
+
+          .weCode2 {
+            position: absolute;
+            display: inline-block;
+            margin: 22px 0px 0px 10px;
+            font-weight: 400;
+            color: grey;
+          }
+        }
+        .storySection {
+          border: 1px solid #dbdbdb;
+          margin-top: 10px;
+          padding: 10px;
+          height: 165px;
+          background-color: white;
+          display: flex;
+          justify-content: space-between;
+          font-size: 15px;
+          position: relative;
+          overflow-y: scroll;
+
+          .story {
+            color: grey;
+          }
+          .storyPic {
+            position: absolute;
+            margin-top: 20px;
+            width: 250px;
+            height: 165px;
+            padding-left: 10px;
+            .wE {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+
+            .wE2 {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+              font-weight: bold;
+            }
+            .wE3 {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+            .coDe {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+
+            .coDe2 {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+              font-weight: bold;
+            }
+            .coDe3 {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+            .forTy {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+
+            .fortyTwo {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+              font-weight: bold;
+            }
+            .fortyThree {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+            .frontEnd {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+
+            .frontEndTwo {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+              font-weight: bold;
+            }
+            .frontEndThree {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+          }
+        }
+        .reCommend {
+          border: 1px solid #dbdbdb;
+          margin-top: 10px;
+          padding: 10px;
+          height: 180px;
+          background-color: white;
+          display: flex;
+          justify-content: space-between;
+          font-size: 15px;
+          position: relative;
+          .recommendFor {
+            color: grey;
+          }
+          .recommendPic {
+            position: absolute;
+            margin-top: 20px;
+            width: 250px;
+            height: 165px;
+            padding-left: 10px;
+
+            .reCom1 {
+              width: 30px;
+              height: 30px;
+              border-radius: 20px;
+              margin-top: 8px;
+            }
+            .reCom2 {
+              position: absolute;
+              display: inline-block;
+              margin: 7px 0px 0px 10px;
+              font-weight: bold;
+            }
+            .reCom3 {
+              position: absolute;
+              display: inline-block;
+              margin: 22px 0px 0px 10px;
+              font-weight: 400;
+              color: grey;
+            }
+          }
+        }
+        .pageInfo {
+          font-size: 13px;
+          margin: 20px 10px;
+
+          display: flex;
+          flex-wrap: wrap;
+          text-decoration: none;
+
+          .linkInfo {
+            text-decoration: none;
+            color: grey;
+            margin: 20px 3px;
+          }
+        }
+      }
+    }
+  }
+}
