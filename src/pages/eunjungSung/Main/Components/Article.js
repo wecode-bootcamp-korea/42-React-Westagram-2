@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { CommentBox } from './CommentBox';
 import './Article.scss';
 
-const Article = ({ filteredList }) => {
+const Article = () => {
   const emptyheart = 'images/eunjungSung/emptyheart.png';
   const fullHeart = 'images/eunjungSung/fullheart.png';
   const [articles, setArticles] = useState([]);

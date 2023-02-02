@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Login.scss';
 
 const Login = () => {
@@ -16,16 +16,31 @@ const Login = () => {
   };
 
   const isValid = () => {
-    userId.indexOf('@') >= 0 && userPw.length > 5
+    userId.indexOf('@') >= 0 && userPw.length > 3
       ? setbtnDisabled(false)
       : setbtnDisabled(true);
   };
 
-  const navigate = useNavigate();
-  const goToMain = () => {
-    navigate('/main-eunjung');
+  const signUp = () => {
+    fetch('http://10.58.52.134:3000/users/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify({
+        email: userId,
+        password: userPw,
+      }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        // console.log(data);
+        localStorage.setItem('token', data.accessToken);
+      });
+    //useNavigate();
   };
 
+  // const navigate = useNavigate();
   return (
     <div className="login">
       <main className="loginMain">
@@ -52,8 +67,8 @@ const Login = () => {
           <button
             className="loginBtn"
             type="button"
-            onClick={goToMain}
             disabled={btnDisabled}
+            onClick={signUp}
           >
             로그인
           </button>

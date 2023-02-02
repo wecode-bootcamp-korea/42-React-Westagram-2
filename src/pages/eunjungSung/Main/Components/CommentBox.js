@@ -32,8 +32,8 @@ const CommentBox = ({ time, commentData }) => {
 
   return (
     <div className="commentBox">
-      {commentArr.length > 0 || commentData !== null ? (
-        <p className="colorGray">댓글</p>
+      {commentArr.length > 0 ? (
+        <p className="colorGray">댓글 {commentArr.length}개</p>
       ) : null}
       <ul className="commentUl">
         {commentArr.map((comment, index) => (

@@ -1,7 +1,25 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.scss';
 
-function Nav({ keyword, onChange }) {
+function Nav() {
+  const [profiles, setProfiles] = useState([]);
+  const [keyword, setKeyword] = useState('');
+
+  useEffect(() => {
+    fetch('/data/profileData.json')
+      .then(response => response.json())
+      .then(json => setProfiles(json));
+  });
+
+  const onChange = e => {
+    setKeyword(e.target.value);
+  };
+
+  const filteredList = profiles.filter(profile =>
+    profile.profileId.toLowerCase().includes(keyword.toLowerCase())
+  );
+
   return (
     <nav className="nav">
       <div className="navLeft">
@@ -24,6 +42,22 @@ function Nav({ keyword, onChange }) {
           placeholder="검색"
           onChange={onChange}
         />
+        <ul className="searchedLists">
+          {keyword.length > 0 ? (
+            <>
+              {filteredList.map(profile => (
+                <li className="searchedList" key={profile.id}>
+                  <img
+                    className="searchedImg"
+                    alt="Profile Img"
+                    src={profile.profileImg}
+                  />
+                  <span className="searchedId">{profile.profileId}</span>
+                </li>
+              ))}
+            </>
+          ) : null}
+        </ul>
       </div>
 
       <div className="navRight">

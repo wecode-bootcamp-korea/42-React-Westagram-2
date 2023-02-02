@@ -21,7 +21,7 @@ const ProfileRecommend = () => {
                 <img
                   className="profileImg"
                   alt="Profile Img"
-                  src={profile.path}
+                  src={profile.profileImg}
                 />
                 <div className="profileDiv">
                   <span className="fontBold">{profile.profileId}</span>

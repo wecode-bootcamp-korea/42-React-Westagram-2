@@ -1,9 +1,11 @@
 @import '../../../../styles/mixin.scss';
 @import '../../../../styles/common.scss';
+
 .nav {
   @include flex(space-around, center);
+  position: relative;
   height: 40px;
-  padding: 20px 200px;
+  padding: 30px;
   border-bottom: 1px solid lightgray;
   text-align: center;
 
@@ -22,23 +24,51 @@
 
   .searchWrapper {
     @include flex(center, center);
-  }
+    flex-direction: column;
 
-  .searchBar {
-    width: 360px;
-    height: 30px;
-    padding: 2px;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    background: url('../../../../assets/eunjungSung/search.png') center
-      no-repeat;
-    background-position: 10px center;
-    color: gray;
-    text-align: center;
-  }
+    .searchBar {
+      position: absolute;
+      top: 36%;
+      width: 30%;
+      height: 30px;
+      padding: 2px 10px 2px 35px;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      background: url('../../../../assets/eunjungSung/search.png') center
+        no-repeat;
+      background-position: 10px center;
+      color: gray;
+      text-align: left;
+    }
 
-  .searchBar:focus {
-    outline: none;
+    .searchBar:focus {
+      outline: none;
+    }
+
+    .searchedLists {
+      @include flex(left, null);
+      position: absolute;
+      top: 65%;
+      flex-direction: column;
+      width: 30%;
+      height: auto;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid lightgray;
+      border-top: none;
+
+      .searchedList {
+        @include flex(left, center);
+        padding: 7px 10px 7px 10px;
+
+        .searchedId {
+          padding-left: 10px;
+          font-size: 14px;
+          font-weight: bold;
+          white-space: no-wrap;
+        }
+      }
+    }
   }
 
   .navRight {
@@ -51,5 +81,19 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav {
+    .navLeft {
+      .logo {
+        display: none;
+      }
+
+      .fontBold {
+        display: none;
+      }
+    }
   }
 }
