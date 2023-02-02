@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faHeart,
@@ -10,7 +10,8 @@ import CommentInput from './CommentInput';
 import './Feed.scss';
 import Liked from './Liked';
 
-const Feed = () => {
+const Feed = props => {
+  console.log(props.feedList);
   const [input, setInput] = useState('');
   const [commentList, setCommentList] = useState([]);
   const onChangeInput = e => {
@@ -23,6 +24,18 @@ const Feed = () => {
     setInput('');
   };
 
+  const [feedList, setFeedList] = useState([]);
+
+  const fetchFeedData = () => {
+    fetch('/data/feedData.json', {
+      method: 'GET',
+    })
+      .then(res => res.json())
+      .then(data => {
+        setFeedList(data);
+      });
+  };
+
   return (
     <div className="mainContainer">
       <div className="feeds">
@@ -31,22 +44,38 @@ const Feed = () => {
             <div className="feedProfile">
               <div className="imageAndIdContainer">
                 <div className="imageConatiner">
-                  <img
-                    className="image"
-                    src="images/heylynnShin/heylynn_profile.jpg"
-                    alt="profile pic"
-                  />
+                  {feedList.map(feed => {
+                    return (
+                      <img
+                        key={feed.id}
+                        src={feed.profileImage}
+                        className="image"
+                        alt="profile pic"
+                      />
+                    );
+                  })}
                 </div>
-                <b className="id">heylynn</b>
+                {feedList.map(feed => {
+                  return (
+                    <p key={feed.id} className="id">
+                      {feed.profiledId}
+                    </p>
+                  );
+                })}
               </div>
             </div>
           </section>
           <section className="feedImageContainer">
-            <img
-              src="images/heylynnShin/westagram-feed.png"
-              alt="feed pic"
-              className="feedImage"
-            />
+            {feedList.map(feed => {
+              return (
+                <img
+                  key={feed.id}
+                  src={feed.feedImage}
+                  alt="feed pic"
+                  className="feedImage"
+                />
+              );
+            })}
           </section>
           <div className="belowFeedImage">
             <section className="feedIconContainer">

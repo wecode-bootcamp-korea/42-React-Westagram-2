@@ -5,8 +5,8 @@ import './Login.scss';
 const Login = () => {
   const [userId, setUserId] = useState('');
   const [userPw, setUserPw] = useState('');
-  console.log(userId, 'userId');
-  console.log(userPw, 'userPw');
+  // console.log(userId, 'userId');
+  // console.log(userPw, 'userPw');
 
   const getUserId = event => {
     setUserId(event.target.value);
@@ -23,12 +23,42 @@ const Login = () => {
       : setActive(false);
   };
   const navigate = useNavigate();
+
   const goToMain = () => {
-    if (userId.includes('@') && userPw.length >= 5) {
-      navigate('/main-heylynn');
-    } else {
-      alert('회원 정보를 다시 입력해주세요.');
-    }
+    console.log('클릭');
+    fetch('http://10.58.52.53:3000/users/signin', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify({
+        // name: '신혜린',
+        email: userId,
+        password: userPw,
+      }),
+    })
+      .then(response => {
+        if (response.ok === true) {
+          return response.json();
+        }
+        throw new Error('통신실패!');
+      })
+      .catch(error => console.log(error))
+      .then(data => {
+        console.log(data);
+        if (data.result) {
+          localStorage.setItem('token', data.result);
+          alert('로그인 성공');
+          navigate('/main-heylynn');
+        } else {
+          alert('아이디 혹은 비밀번호를 확인 해 주세요.');
+        }
+      });
+    // if (userId.includes('@') && userPw.length >= 5) {
+    //   navigate('/main-heylynn');
+    // } else {
+    //   alert('회원 정보를 다시 입력해주세요.');
+    // }
   };
 
   return (
@@ -59,7 +89,7 @@ const Login = () => {
               type="button"
               className={active ? 'activeBtn' : 'btn'} // "btn"
               onClick={goToMain}
-              disabled={userId || userPw ? true : false}
+              disabled={userId && userPw ? false : true}
             >
               <span>로그인</span>
             </button>

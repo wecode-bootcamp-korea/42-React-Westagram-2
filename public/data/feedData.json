@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "profileImage": "images/heylynnShin/heylynn_profile.jpg",
+    "profileId": "heylynn",
+    "feedImage": "images/heylynnShin/palmtree.jpeg"
+  },
+  {
+    "id": 2,
+    "profileImage": "images/heylynnShin/kimnamgil.png",
+    "profileId": "namgil",
+    "feedImage": "images/heylynnShin/palmtree.jpeg"
+  },
+  {
+    "id": 3,
+    "profileImage": "images/heylynnShin/kimyujeong.jpeg",
+    "profileId": "yujeong",
+    "feedImage": "images/heylynnShin/palmtree.jpeg"
+  }
+]
