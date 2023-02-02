@@ -53,8 +53,8 @@ const Feed = ({ feed }) => {
           <Comments
             userName={userId}
             usercomments={com}
-            key={commentList.indexOf(com)}
-            commentId={commentList.length}
+            key={commentList.indexOf(com) + 1}
+            commentId={commentList.indexOf(com) + 1}
           />
         ))}
       </div>
