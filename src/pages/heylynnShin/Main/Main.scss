@@ -4,11 +4,23 @@
   background-color: #fafafa;
 
   .main {
-    padding-top: 30px;
+    padding-top: 70px;
     display: flex;
+    overflow: auto;
     justify-content: center;
-    overflow: hidden;
     height: 100vh;
     width: 100vw;
+  }
+
+  .main::-webkit-scrollbar {
+    display: none;
+
+    .mainContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
   }
 }

@@ -1,158 +1,152 @@
-.mainContainer {
+.feeds {
+  max-width: 550px;
+  min-width: 400px;
+  padding: 20px;
   display: flex;
-  overflow: hidden;
-  justify-content: right;
-  padding-right: 30px;
+  flex-direction: column;
 
-  .feeds {
-    width: 80%;
-    padding-top: 20px;
-    // border: 1px solid lightgray;
+  .feed {
+    border: 1px solid lightgray;
     display: flex;
+    width: 500px;
     flex-direction: column;
+    margin-left: auto;
+    background-color: white;
 
-    .feed {
-      border: 1px solid lightgray;
+    .profileContainer {
       display: flex;
-      flex-direction: column;
-      margin-left: auto;
-      background-color: white;
+      padding: 4px 0;
 
-      .profileContainer {
-        height: 45px;
+      .feedProfile {
+        width: 80px;
         display: flex;
-        padding: 4px 0;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px;
 
-        .feedProfile {
-          width: 80px;
+        .imageAndIdContainer {
+          padding-left: 15px;
           display: flex;
           align-items: center;
           justify-content: space-around;
-          padding: 5px;
 
-          .imageAndIdContainer {
-            padding-left: 15px;
+          .imageConatiner {
+            border-radius: 70%;
+            overflow: hidden;
+            width: 30px;
+            height: 30px;
             display: flex;
-            align-items: center;
-            justify-content: space-around;
 
-            .imageConatiner {
-              border-radius: 70%;
-              overflow: hidden;
-              width: 30px;
-              height: 30px;
-              display: flex;
-
-              .image {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-              }
+            .image {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
+          }
 
-            .id {
-              font-size: 15px;
-              padding-left: 5px;
-              font-weight: 600;
-            }
+          .id {
+            font-size: 15px;
+            padding-left: 5px;
+            font-weight: 600;
           }
         }
       }
+    }
 
-      .feedImageContainer {
-        .feedImage {
-          width: 100%;
-          object-fit: cover;
-        }
+    .feedImageContainer {
+      .feedImage {
+        width: 100%;
+        object-fit: cover;
       }
+    }
 
-      .belowFeedImage {
-        padding-left: 5px;
+    .belowFeedImage {
+      padding-left: 5px;
 
-        .feedIconContainer {
-          display: flex;
-          justify-content: space-between;
-
-          .iconContainer {
-            display: flex;
-            width: 60px;
-            justify-content: space-between;
-          }
-
-          .bookmarkIconContainer {
-            padding-right: 10px;
-          }
-        }
-
-        .feedText {
-          font-size: 13px;
-
-          .postContainer {
-            padding-top: 10px;
-            display: flex;
-            align-items: center;
-
-            .id {
-              font-weight: bold;
-            }
-
-            .post {
-              padding-left: 5px;
-            }
-
-            .more {
-              color: gray;
-              padding-left: 5px;
-            }
-          }
-
-          .writtenCommentContainer {
-            padding-top: 5px;
-            display: flex;
-            align-items: center;
-
-            .id {
-              font-weight: bold;
-            }
-            .writtenComment {
-              padding-left: 5px;
-            }
-          }
-
-          .timeConatiner {
-            .time {
-              margin: 0;
-              padding-bottom: 5px;
-              color: gray;
-            }
-          }
-        }
-      }
-
-      .commentContainer {
+      .feedIconContainer {
         display: flex;
         justify-content: space-between;
-        padding-top: 10px;
-        border-top: 1px solid lightgray;
 
-        .inputComment {
-          font-size: 12px;
-          border: none;
-          width: 95%;
+        .iconContainer {
+          display: flex;
+          width: 60px;
+          justify-content: space-between;
         }
 
-        .inputComment:focus {
-          outline: none;
+        .bookmarkIconContainer {
+          padding-right: 10px;
+        }
+      }
+
+      .feedText {
+        font-size: 13px;
+
+        .postContainer {
+          padding-top: 10px;
+          display: flex;
+          align-items: center;
+
+          .id {
+            font-weight: bold;
+          }
+
+          .post {
+            padding-left: 5px;
+          }
+
+          .more {
+            color: gray;
+            padding-left: 5px;
+          }
         }
 
-        .commentBtn {
-          white-space: nowrap;
-          border: none;
-          background-color: transparent;
-          color: lightskyblue;
-          cursor: pointer;
+        .writtenCommentContainer {
+          padding-top: 5px;
+          display: flex;
+          align-items: center;
+
+          .id {
+            font-weight: bold;
+          }
+          .writtenComment {
+            padding-left: 5px;
+          }
         }
+
+        .timeConatiner {
+          .time {
+            margin: 0;
+            padding-bottom: 5px;
+            color: gray;
+          }
+        }
+      }
+    }
+
+    .commentContainer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-top: 1px solid lightgray;
+
+      .inputComment {
+        font-size: 12px;
+        border: none;
+        width: 95%;
+      }
+
+      .inputComment:focus {
+        outline: none;
+      }
+
+      .commentBtn {
+        white-space: nowrap;
+        border: none;
+        background-color: transparent;
+        color: lightskyblue;
+        cursor: pointer;
       }
     }
   }
 }
+// }

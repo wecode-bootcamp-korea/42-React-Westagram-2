@@ -5,19 +5,22 @@ import Nav from './Nav';
 import Feed from './Feed';
 
 const Main = () => {
-  const [data, setData] = useState([]);
+  const [feed, setFeed] = useState([]);
   useEffect(() => {
     fetch('data/feedData.json')
       .then(res => res.json())
-      .then(data => setData(data));
+      .then(data => setFeed(data));
   }, []);
+  console.log(feed);
   return (
     <div className="westagram">
       <Nav />
       <main className="main">
-        {data.map(list => (
-          <Feed list={list} />
-        ))}
+        <div className="mainContainer">
+          {feed.map(list => (
+            <Feed key={list.id} list={list} />
+          ))}
+        </div>
         <Aside />
       </main>
     </div>
