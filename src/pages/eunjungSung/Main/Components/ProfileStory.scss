@@ -14,12 +14,12 @@
       @include imgSize;
     }
 
-    .profileDiv {
+    .profileStoryWrapper {
       @include flex(left, null);
-      @include profileDiv;
+      @include profileWrapper;
 
       .colorGray {
-        @include profileSpan;
+        @include profileDesc;
       }
     }
   }

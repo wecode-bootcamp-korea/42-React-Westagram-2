@@ -22,7 +22,7 @@ const ProfileStory = () => {
                 alt="Profile Img"
                 src={profile.profileImg}
               />
-              <div className="profileDiv">
+              <div className="profileStoryWrapper">
                 <span className="fontBold">{profile.profileId}</span>
                 <span className="colorGray">{profile.time}&nbsp;전</span>
               </div>

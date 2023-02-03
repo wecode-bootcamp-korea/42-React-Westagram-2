@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { MENU_DATA } from '../Data/MenuData';
 import './Nav.scss';
 
 function Nav() {
   const [profiles, setProfiles] = useState([]);
   const [keyword, setKeyword] = useState('');
+  const [onClick, setOnClick] = useState(false);
 
   useEffect(() => {
     fetch('/data/profileData.json')
@@ -19,6 +21,12 @@ function Nav() {
   const filteredList = profiles.filter(profile =>
     profile.profileId.toLowerCase().includes(keyword.toLowerCase())
   );
+
+  const onClickMenu = () => {
+    setOnClick(prev => {
+      return !prev;
+    });
+  };
 
   return (
     <nav className="nav">
@@ -71,11 +79,28 @@ function Nav() {
           alt="Heart Img"
           src="images/eunjungSung/heart.png"
         />
-        <img
-          className="navImg"
-          alt="Profile Img"
-          src="images/eunjungSung/profile.png"
-        />
+
+        <div className="menuWrapper">
+          <button className="menuBtn" type="button" onClick={onClickMenu}>
+            <img
+              className="navImg"
+              alt="Profile Img"
+              src="images/eunjungSung/profile.png"
+            />
+            {onClick ? (
+              <ul className="menuLists">
+                {MENU_DATA.map(list => (
+                  <>
+                    <li className="menuList" key={list.id}>
+                      {list.menu}
+                    </li>
+                    <hr className="menuLine" key={list.id} />
+                  </>
+                ))}
+              </ul>
+            ) : null}
+          </button>
+        </div>
       </div>
     </nav>
   );

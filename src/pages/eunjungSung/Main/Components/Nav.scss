@@ -84,6 +84,35 @@
   }
 }
 
+.menuWrapper {
+  position: relative;
+
+  .menuBtn {
+    border: none;
+    background-color: white;
+  }
+
+  .menuLists {
+    position: absolute;
+    right: 20%;
+    width: 100px;
+    margin-top: 10px;
+    background-color: white;
+
+    .menuList {
+      text-align: right;
+      margin-bottom: 5px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .menuLine {
+      border: 1px solid lightgray;
+    }
+  }
+}
+
 @media (max-width: 650px) {
   .nav {
     .navLeft {

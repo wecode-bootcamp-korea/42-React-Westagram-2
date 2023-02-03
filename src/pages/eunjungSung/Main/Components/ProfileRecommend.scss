@@ -5,12 +5,12 @@
   flex-direction: column;
   padding-left: 0px;
 
-  .recommendLi {
+  .recommendList {
     @include flex(space-between, center);
     margin-bottom: 15px;
     gap: 10px;
 
-    .recommendDiv {
+    .recommendWrapper {
       @include flex(left, center);
       gap: 10px;
 
@@ -18,12 +18,12 @@
         @include imgSize;
       }
 
-      .profileDiv {
+      .profileRecommendWrapper {
         @include flex(left, null);
-        @include profileDiv;
+        @include profileWrapper;
 
         .colorGray {
-          @include profileSpan;
+          @include profileDesc;
         }
       }
     }

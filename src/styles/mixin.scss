@@ -9,12 +9,12 @@
   height: 24px;
 }
 
-@mixin profileDiv {
+@mixin profileWrapper {
   flex-direction: column;
   gap: 2px;
 }
 
-@mixin profileSpan {
+@mixin profileDesc {
   width: 140px;
   height: 18px;
   margin-top: 5px;

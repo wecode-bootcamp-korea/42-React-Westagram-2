@@ -16,14 +16,14 @@ const ProfileRecommend = () => {
         .filter(profile => profile.follower !== null && profile.id !== 1)
         .map(profile => {
           return (
-            <li className="recommendLi" key={profile.id}>
-              <div className="recommendDiv">
+            <li className="recommendList" key={profile.id}>
+              <div className="recommendWrapper">
                 <img
                   className="profileImg"
                   alt="Profile Img"
                   src={profile.profileImg}
                 />
-                <div className="profileDiv">
+                <div className="profileRecommendWrapper">
                   <span className="fontBold">{profile.profileId}</span>
                   <span className="colorGray">{profile.follower}</span>
                 </div>
