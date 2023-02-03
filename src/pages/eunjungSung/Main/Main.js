@@ -1,7 +1,21 @@
 import React from 'react';
+import { Nav } from './Components/Nav';
+import { Article } from './Components/Article';
+import { Aside } from './Components/Aside';
+import './Main.scss';
 
 const Main = () => {
-  return <h1>Main page</h1>;
+  return (
+    <div className="main">
+      <Nav />
+      <main className="mainWrapper">
+        <div className="mainRight">
+          <Article />
+        </div>
+        <Aside />
+      </main>
+    </div>
+  );
 };
 
 export default Main;

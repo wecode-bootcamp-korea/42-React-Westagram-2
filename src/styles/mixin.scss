@@ -1,0 +1,24 @@
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin imgSize() {
+  width: 24px;
+  height: 24px;
+}
+
+@mixin profileWrapper {
+  flex-direction: column;
+  gap: 2px;
+}
+
+@mixin profileDesc {
+  width: 140px;
+  height: 18px;
+  margin-top: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

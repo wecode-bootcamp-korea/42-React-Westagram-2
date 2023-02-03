@@ -1,0 +1,70 @@
+@import '../../../styles/mixin.scss';
+
+.login {
+  @include flex(center, center);
+  flex-direction: column;
+  padding-top: 50px;
+
+  .loginMain {
+    @include flex(center, center);
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 70px 20px;
+    background: white;
+    border: 1px solid lightgray;
+  }
+
+  .logo {
+    margin-bottom: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loginInput {
+    width: 270px;
+    height: 38px;
+    margin-bottom: 5px;
+    background: #eeeeee;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+  }
+
+  .loginInput::placeholder {
+    font-weight: bold;
+  }
+
+  .loginInput:focus {
+    outline: none;
+  }
+
+  .loginBtn {
+    width: 282px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 2px;
+    background-color: #458eff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .loginBtn:disabled {
+    opacity: 0.3;
+  }
+
+  .forgotPw {
+    color: black;
+    text-decoration: none;
+  }
+}

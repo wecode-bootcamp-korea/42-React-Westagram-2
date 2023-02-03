@@ -1,0 +1,36 @@
+@import '../../../../styles/mixin.scss';
+
+.profileRecommend {
+  @include flex(space-between, null);
+  flex-direction: column;
+  padding-left: 0px;
+
+  .recommendList {
+    @include flex(space-between, center);
+    margin-bottom: 15px;
+    gap: 10px;
+
+    .recommendWrapper {
+      @include flex(left, center);
+      gap: 10px;
+
+      .profileImg {
+        @include imgSize;
+      }
+
+      .profileRecommendWrapper {
+        @include flex(left, null);
+        @include profileWrapper;
+
+        .colorGray {
+          @include profileDesc;
+        }
+      }
+    }
+
+    .blueB {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  }
+}
