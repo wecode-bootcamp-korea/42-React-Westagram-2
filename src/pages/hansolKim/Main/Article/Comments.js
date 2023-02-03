@@ -3,7 +3,15 @@ import './Comments.scss';
 
 const Comments = com => {
   const [heartImg, setHeartImg] = useState('images/hansolKim/heart.png');
-  console.log(com.commentId);
+  console.log(com.commentList);
+
+  const removeComment = id => {
+    com.setCommentList(
+      com.commentList.filter(comment => {
+        return comment.id !== id;
+      })
+    );
+  };
   return (
     <div className="comments" key={com.id}>
       <div>
@@ -24,9 +32,9 @@ const Comments = com => {
         <img
           src="images/hansolKim/remove.png"
           alt="remove"
-          // onClick={() => {
-          //   removeComment(com.id);
-          // }}
+          onClick={() => {
+            removeComment(com.id);
+          }}
         />
       </div>
     </div>

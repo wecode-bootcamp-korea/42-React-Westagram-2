@@ -55,6 +55,8 @@ const Feed = ({ feed }) => {
             usercomments={com}
             key={commentList.indexOf(com) + 1}
             commentId={commentList.indexOf(com) + 1}
+            commentList={commentList}
+            setCommentList={setCommentList}
           />
         ))}
       </div>
