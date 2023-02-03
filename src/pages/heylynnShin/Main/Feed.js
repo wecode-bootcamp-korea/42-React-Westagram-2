@@ -11,16 +11,16 @@ import './Feed.scss';
 import Liked from './Liked';
 
 const Feed = ({ list }) => {
-  console.log(list.profileId);
   const [input, setInput] = useState('');
   const [commentList, setCommentList] = useState([]);
   const onChangeInput = e => {
     setInput(e.target.value);
-    console.log(input);
   };
   const onClickComment = e => {
     e.preventDefault();
     setCommentList([...commentList, input]);
+    //TODO:여기에 input 걍 넣으면 string으로 들어가서, <CommentInput/>언에 있는 comment.map에 적용이 안돼서 브라우저 고장남.
+    //map은 Array일때만 쓸 수 있음.
     setInput('');
   };
 
@@ -47,18 +47,18 @@ const Feed = ({ list }) => {
         <div className="belowFeedImage">
           <section className="feedIconContainer">
             <div className="iconContainer">
-              <FontAwesomeIcon icon={faHeart} classname="heart" size="s" />
-              <FontAwesomeIcon icon={faComment} classname="comment" size="s" />
+              <FontAwesomeIcon icon={faHeart} className="heart" size="s" />
+              <FontAwesomeIcon icon={faComment} className="comment" size="s" />
               <FontAwesomeIcon
                 icon={faArrowUpFromBracket}
-                classname="share"
+                className="share"
                 size="s"
               />
             </div>
             <div className="bookmarkIconContainer">
               <FontAwesomeIcon
                 icon={faBookmark}
-                classname="bookmark"
+                className="bookmark"
                 size="s"
               />
             </div>

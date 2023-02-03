@@ -5,8 +5,6 @@ import './Login.scss';
 const Login = () => {
   const [userId, setUserId] = useState('');
   const [userPw, setUserPw] = useState('');
-  // console.log(userId, 'userId');
-  // console.log(userPw, 'userPw');
 
   const getUserId = event => {
     setUserId(event.target.value);
@@ -25,7 +23,6 @@ const Login = () => {
   const navigate = useNavigate();
 
   const goToMain = () => {
-    console.log('클릭');
     fetch('http://10.58.52.53:3000/users/signin', {
       method: 'POST',
       headers: {
@@ -45,7 +42,6 @@ const Login = () => {
       })
       .catch(error => console.log(error))
       .then(data => {
-        console.log(data);
         if (data.result) {
           localStorage.setItem('token', data.result);
           alert('로그인 성공');

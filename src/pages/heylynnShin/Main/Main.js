@@ -11,7 +11,6 @@ const Main = () => {
       .then(res => res.json())
       .then(data => setFeed(data));
   }, []);
-  console.log(feed);
   return (
     <div className="westagram">
       <Nav />
