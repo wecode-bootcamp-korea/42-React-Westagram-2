@@ -1,0 +1,18 @@
+.story {
+    width: 250px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    .storyLine {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      .storyText{
+        font-size: 12px;
+        color: #9b9b9b;
+      }
+      .storyRightText {
+        font-size: 12px;
+      }
+    }
+  }

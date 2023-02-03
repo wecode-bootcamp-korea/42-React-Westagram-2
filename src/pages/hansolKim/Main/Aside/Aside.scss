@@ -1,0 +1,28 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top:0;
+    width: 200px;
+    height: 100%;
+    background-color: #fafafa;
+    .copyright {
+      margin-top: 10px;
+      white-space: pre-wrap;
+      font-size: 12px;
+      color: #9b9b9b;
+      span {
+        a{
+          cursor: pointer;
+          text-decoration: none;
+          color: #9b9b9b;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1160px) {
+    .aside {
+      display: none;
+    }
+  }
