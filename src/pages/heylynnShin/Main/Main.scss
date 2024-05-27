@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Noto+Serif+Armenian:wght@500&display=swap');
+
+.westagram {
+  background-color: #fafafa;
+
+  .main {
+    padding-top: 70px;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .main::-webkit-scrollbar {
+    display: none;
+
+    .mainContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+  }
+}
